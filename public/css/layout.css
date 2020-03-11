@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Bubblegum+Sans|Caveat+Brush|Chewy|Lobster+Two');
+
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+/* ===== NAVIGATION ======*/
+footer{
+    background-color: rgba(83, 84, 97, 0.77);
+}
+
+#footer p{
+    color:black;
+}
+
+.logo-bottom h1 a {
+    color: white;
+}
+
+form .btn-primary{
+    background: #7F2AA7;
+    border-radius: 5px;
+    margin-bottom: 2%;
+}
+
