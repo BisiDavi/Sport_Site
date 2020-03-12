@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('content')
-<link rel="stylesheet" href="{{asset('css/home.css')}}">
+<link rel="stylesheet" href="css/home.css">
     <div class="container-fluid">
         <div class="row">
             <div class="home-banner">
