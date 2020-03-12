@@ -18,14 +18,15 @@
     width: 80%;
 }
 
-.academy-text h1{
-    max-width: 80%;
-}
 
+@media screen and (min-width:900px){
+.academy-text h1{
+        max-width: 80%;
+    }
 .academy-text p{
     max-width: 70%;
 }
-
+}
 
 .volleyball{
     position: absolute;
@@ -100,7 +101,7 @@
     .home-banner .text-content{
         font-size: medium;
         margin-top:-40%;
-        margin-left: -2%;
+        margin-left: 2%;
         line-height: 1rem;
     }
     .home-banner .text-content h1{
@@ -127,9 +128,20 @@
       display: flex;
   }
   .about-academy img{
-      width: 50%;
+      width: 90%;
   }
 
+  .academy-text{
+      width: 100%;
+  }
+
+  .academy-text p{
+      width: 100%;
+  }
+
+  .academy-text h1{
+    text-align: center;
+  }
   .container-fluid h1{
       font-size: 1.5rem;
       margin-top: 7%;

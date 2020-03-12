@@ -19,12 +19,12 @@
             </div>
         </div>
 
-        <div class="row about-academy mt-5 mb-5" id="about-academy">
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 images">
+        <div class="row about-academy mt-3 mb-5" id="about-academy">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 images">
                 <img class="img-background" src="{{asset('img/Rectangle 16.png')}}">
                 <img class="volleyball" src="{{asset('img/about 1.png')}}">
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 academy-text">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 academy-text">
                 <h1>ABOUT THE ACADEMY</h1>
                 <p>
                     Authentic African Sports Academy is an independent residential sports college for boys
@@ -32,7 +32,7 @@
                         development.
                 </p>
                         <br>
-                <p> Academy is designed to help aspiring players hone their football skills,
+                <p class="d-none d-lg-block"> Academy is designed to help aspiring players hone their football skills,
                         place them in limelight, and facilitate their discovery and recruitment into the big clubs
                         to play alongside football stars of their dreams
                 </p>
@@ -69,7 +69,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-4 mt-4">
+                <div class="col-sm-6 col-md-4 col-lg-4 mt-4 d-none d-lg-block">
                     <div class="card shadow-lg p-3 mb-5 rounded">
                         <img class="card-img-top" src="{{asset('img/players-picture.png')}}">
                         <div class="card-block">
