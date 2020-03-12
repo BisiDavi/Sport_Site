@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
     <!-- Vendor CSS Files -->
     <link rel="stylesheet" type="text/css" href="{{asset('css/layout.css')}}">
     <link href="{{asset('assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
@@ -14,7 +15,7 @@
     <link href="{{asset('assets/vendor/venobox/venobox.css')}}" rel="stylesheet">
     <link href="{{asset('assets/vendor/owl.carousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
     <link href="{{asset('assets/vendor/aos/aos.css')}}" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="{{asset('assets/css/style.css')}}" rel="stylesheet">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
