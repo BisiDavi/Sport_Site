@@ -37,3 +37,16 @@ form .btn-primary{
     margin-bottom: 2%;
 }
 
+
+@media screen and (max-width:768px){
+    .container-fluid #banner-home {
+        margin-top: 0%;
+        padding-bottom: 0;
+        margin-bottom: 0%;
+    }
+
+    .container-fluid .top-banner{
+        margin-top: 20%;
+    }
+
+}

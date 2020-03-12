@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="{{asset('css/admission.css')}}">
 <div class="container-fluid">
     <div class="row">
-        <img src="{{asset('img/banner.png')}}" alt="banner" style="width:100%">
+        <img src="{{asset('img/banner.png')}}" alt="banner" class="top-banner" style="width:100%">
     </div>
 </div>
 

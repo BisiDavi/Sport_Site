@@ -3,13 +3,13 @@
 
 <div class="container-fluid">
     <div class="row">
-        <img src="{{asset('img/banner.png')}}" alt="banner" style="width:100%">
+        <img src="{{asset('img/banner.png')}}" class="top-banner" alt="banner" style="width:100%">
     </div>
 </div>
 
     <div class="container">
         <div class="form-title">
-            <h1 class="mt-5 mb-5">Contact</h1>
+            <h1 class="mt-3 mb-3">Contact</h1>
             <p>Please fill in the below information in block letters only and please make sure all information given are very accurate.</p>
             <h3>Personal Information</h3>
         </div>

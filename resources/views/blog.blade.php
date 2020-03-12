@@ -2,7 +2,7 @@
 
 <div class="container-fluid">
     <div class="row">
-        <img src="{{asset('img/banner.png')}}" alt="banner" style="width:100%">
+        <img src="{{asset('img/banner.png')}}" class="top-banner" alt="banner" style="width:100%">
 
         <div class="container mt-5 mb-5">
             <h6>March 11, 2020</h6>

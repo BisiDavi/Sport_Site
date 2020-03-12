@@ -8,7 +8,7 @@
     <div class="container-fluid">
         <div class="row">
           <div class="home-banner col-md-12 col-sm-12 col-xs-12">
-                <img src="img/home-banner-1.png" alt="banner" style="width:100%;">
+                <img src="img/home-banner-1.png" alt="banner" style="width:100%;margin-left:0% !important;padding-left:0%;">
                 <div class="text-content" style="text-align:left">
                     <h1 class="">Africa Sport <br><span style="color: #7F2AA7;"> Academy</span></h1>
                     <p>

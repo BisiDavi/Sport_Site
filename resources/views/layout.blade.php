@@ -46,9 +46,9 @@
     </div>
     <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
-    <div class="container-fluid d-flex">
+    <div class="container-fluid mr-auto d-flex">
       <div class="logo mr-auto d-flex">
-        <a href="/"><img src="{{asset('img/codepen.png')}}" alt="logo" class="img-fluid mr-2"></a>
+        <a href="/"><img src="{{asset('img/codepen.png')}}" alt="logo" class="img-fluid mr-2 banner-home"></a>
         <h1 class="text-light"><a href="/">Sport Academy</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
       </div>
