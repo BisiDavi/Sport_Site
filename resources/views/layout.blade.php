@@ -102,7 +102,7 @@
                     into the big clubs to play alongside football stars of their dreams.The academy is subdivided into two viz
                 </p>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 footer-links" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-lg-4 col-md-4 col-sm-4-hidden col-xs-4-hidden footer-links" data-aos="fade-up" data-aos-delay="200">
                 <h1 class="ml-5">Additional Link</h1>
                 <ul>
                     <li><a href="#location">Our Location</a></li>
@@ -155,7 +155,7 @@
   <script src="assets/vendor/aos/aos.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="{{asset('assets/js/main.js')}}"></script>
+  <script src="assets/js/main.js"></script>
 
 </body>
 </html>

@@ -4,8 +4,8 @@
 <link rel="stylesheet" href="css/home.css">
     <div class="container-fluid">
         <div class="row">
-            <div class="home-banner">
-                <img src="{{asset('img/home-banner-background.png')}}" alt="banner" style="width:100%">
+            <div class="home-banner col-md-12 col-sm-12 col-xs-12">
+                <img src="{{asset('img/home-banner-background.png')}}" alt="banner" style="width:100%;">
                 <div class="text-content" style="text-align:left">
                     <h1>Africa Sport Academy</h1>
                     <p>
@@ -13,17 +13,17 @@
                         A rising number of academies are opening across the continent with ..
                     </p>
                 </div>
-                <div class="image-content" style="text-align:right; float:right">
+                <div class="image-content" style="text-align:right">
                     <img src="{{asset('img/sport-img.png')}}" alt="sport-image">
                 </div>
             </div>
         </div>
         <h1>About the Academy</h1>
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="row about-academy">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
             <img src="{{asset('img/home-about-img.png')}}" alt="about us image">
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                 <p>
                     Authentic African Sports Academy is an independent residential sports college for boys
                     and girls. It combines education with sports along with a special focus on football

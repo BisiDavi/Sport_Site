@@ -30,7 +30,7 @@
 .home-banner .image-content{
     position: absolute;
     margin-top: -37%;
-    right: 20px;
+    right: 0px;
 }
 
 .image-content img{
@@ -51,6 +51,26 @@
     border-radius: 5px;
 }
 
-.event p{
+/**for screen less than 768px */
+@media screen and (max-width:768px){
+    .home-banner{
+        margin-top: 10%;
+    }
+    .home-banner .text-content{
+        font-size: medium;
+    }
+    .home-banner .text-content h1{
+        font-size: 12px;
+    }
+    .home-banner img{
+        width: 50%;
+    }
 
+  .about-academy{
+      margin-top:15%;
+      display: flex;
+  }
+  .about-academy img{
+      width: 50%;
+  }
 }
