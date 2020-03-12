@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Sport Academy</title>
 
     <!-- Vendor CSS Files -->
     <link rel="stylesheet" type="text/css" href="css/layout.css">
@@ -47,7 +47,7 @@
     <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container-fluid d-flex">
-      <div class="logo mr-auto d-flex ml-5">
+      <div class="logo mr-auto d-flex">
         <a href="/"><img src="{{asset('img/codepen.png')}}" alt="logo" class="img-fluid mr-2"></a>
         <h1 class="text-light"><a href="/">Sport Academy</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
@@ -91,7 +91,7 @@
     <div class="footer-top" style="background:rgba(83, 84, 97, 0.77);">
       <div class="container">
         <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 footer-contact" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 d-sm-none d-sm-block d-xs-none d-xs-block footer-contact" data-aos="fade-up" data-aos-delay="100">
                 <div class="logo-bottom mr-auto d-flex mb-2 mt-2">
                     <a href="/"><img src="{{asset('img/codepen footer.png')}}" alt="logo" class="img-fluid mr-2"></a>
                     <h1><a href="/">Sport Academy</a></h1>
@@ -102,7 +102,7 @@
                     into the big clubs to play alongside football stars of their dreams.The academy is subdivided into two viz
                 </p>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4-hidden col-xs-4-hidden footer-links" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 d-none d-sm-block footer-links" data-aos="fade-up" data-aos-delay="200">
                 <h1 class="ml-5">Additional Link</h1>
                 <ul>
                     <li><a href="#location">Our Location</a></li>

@@ -2,10 +2,13 @@
 
 @section('content')
 <link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/home-slider.css">
+<link rel="stylesheet" href="asset/js/home-slider.js">
+
     <div class="container-fluid">
         <div class="row">
-            <div class="home-banner col-md-12 col-sm-12 col-xs-12">
-                <img src="{{asset('img/home-banner-background.png')}}" alt="banner" style="width:100%;">
+          <div class="home-banner col-md-12 col-sm-12 col-xs-12">
+                <img src="img/home-banner-background.png" alt="banner" style="width:100%;">
                 <div class="text-content" style="text-align:left">
                     <h1>Africa Sport Academy</h1>
                     <p>
@@ -14,9 +17,9 @@
                     </p>
                 </div>
                 <div class="image-content" style="text-align:right">
-                    <img src="{{asset('img/sport-img.png')}}" alt="sport-image">
+                    <img src="img/sport-img.png" alt="sport-image">
                 </div>
-            </div>
+            </div>           
         </div>
         <h1>About the Academy</h1>
         <div class="row about-academy">
@@ -36,57 +39,84 @@
             </div>
         </div>
 
-        <h1>News and Blog</h1>
-        <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                <div class="card">
-                    <div class="card-body shadow">
-                    <img src="{{asset('img/players-picture.png')}}" alt="">
-                        <div class="text-content" style="text-align:left">
-                            <h1>1st At National football compertition</h1>
-                            <p>
-                                Authentic African Sports Academy is an independent residential sports college for boys
-                                and gAuthentic African Sports Academy is an independent residential
-                                sports college for boys and g.....
-                            </p>
-                            <button class="btn" href="#">Read More</button>
+        
+    <section id="news" class="news section-bg">
+    <div class="container my-auto">
+        <div class="section-title" data-aos="fade-up">
+            <h2>News & Blog</h2>    
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-4 mt-4">
+                    <div class="card shadow-lg p-3 mb-5 rounded">
+                        <img class="card-img-top" src="{{asset('img/players-picture.png')}}">
+                        <div class="card-block">
+                            <figure class="profile">
+                                <img src="{{asset('img/players-picture.png')}}"   class="profile-avatar" alt="">
+                            </figure>
+                            <h4 class="card-title mt-3">1st At National football compertition</h4>
+                            <div class="meta">
+                                <a>Friends</a>
+                            </div>
+                            <div class="card-text">
+                            Authentic African Sports Academy is an independent residential sports college for boys
+                                    and gAuthentic African Sports Academy is an independent residential...                           
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <small>Last updated 3 mins ago</small>
+                            <button class="btn btn-secondary float-right btn-sm">show</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4 mt-4">
+                    <div class="card shadow-lg p-3 mb-5 rounded">
+                        <img class="card-img-top" src="{{asset('img/players-picture.png')}}">
+                        <div class="card-block">
+                            <figure class="profile">
+                                <img src="{{asset('img/players-picture.png')}}"   class="profile-avatar" alt="">
+                            </figure>
+                            <h4 class="card-title mt-3">1st At National football compertition</h4>
+                            <div class="meta">
+                                <a>Friends</a>
+                            </div>
+                            <div class="card-text">
+                            Authentic African Sports Academy is an independent residential sports college for boys
+                                    and gAuthentic African Sports Academy is an independent residential...                           
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <small>Last updated 3 mins ago</small>
+                            <button class="btn btn-secondary float-right btn-sm">show</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4 mt-4">
+                    <div class="card shadow-lg p-3 mb-5 rounded">
+                        <img class="card-img-top" src="{{asset('img/players-picture.png')}}">
+                        <div class="card-block">
+                            <figure class="profile">
+                                <img src="{{asset('img/players-picture.png')}}"   class="profile-avatar" alt="">
+                            </figure>
+                            <h4 class="card-title mt-3">1st At National football compertition</h4>
+                            <div class="meta">
+                                <a>Friends</a>
+                            </div>
+                            <div class="card-text">
+                            Authentic African Sports Academy is an independent residential sports college for boys
+                                    and gAuthentic African Sports Academy is an independent residential...                           
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <small>Last updated 3 mins ago</small>
+                            <button class="btn btn-secondary float-right btn-sm">show</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                <div class="card">
-                    <div class="card-body shadow">
-                    <img src="{{asset('img/players-picture.png')}}" alt="">
-                        <div class="text-content">
-                            <h1>1st At National football compertition</h1>
-                            <p>
-                                Authentic African Sports Academy is an independent residential sports college for boys
-                                and gAuthentic African Sports Academy is an independent residential
-                                sports college for boys and g.....
-                            </p>
-                            <button class="btn" href="#">Read More</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                <div class="card">
-                    <div class="card-body shadow">
-                    <img src="{{asset('img/players-picture.png')}}" alt="">
-                        <div class="text-content">
-                            <h1>1st At National football compertition</h1>
-                            <p>
-                                Authentic African Sports Academy is an independent residential sports college for boys
-                                and gAuthentic African Sports Academy is an independent residential
-                                sports college for boys and g.....
-                            </p>
-                            <button class="btn" href="#">Read More</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </div>  
+    </div>             
+    </section>
+                
+        
 
     <div class="container my-auto">
         <h1>Upcoming Events</h1>
@@ -113,7 +143,7 @@
                 </div>
                 <hr>
             </div>
-            <div class="event">
+            <div class="event d-none d-sm-block">
                 <div class="row">
                     <div class="col-lg-4 col-md-4">
                         <p>June 22, 2020</p>
@@ -136,8 +166,8 @@
                 </div>
                 <hr>
             </div>
-            <div class="event">
-                <div class="row">
+            <div class="event d-none d-sm-block">
+                <div class="row">                    
                     <div class="col-lg-4 col-md-4">
                         <p>June 22, 2020</p>
                         <small>8am - 10am</small>
@@ -146,6 +176,7 @@
                         <p>Table Tennis Tournament</p>
                         <small>Abuja National Stadium</small>
                     </div>
+                                            
                     <div class="col-lg-4 col-md-4 float:right">
                         <div class="row">
                             <div class="col-lg-2 col-md-2 m-2">
@@ -161,7 +192,7 @@
             </div>
     </div>
 
-        <!-- ======= Clients Section ======= -->
+        <!-- ======= Clients Section ======= --> 
         <section id="clients" class="clients section-bg">
             <div class="container">
 
@@ -183,5 +214,5 @@
         </section>
         <!-- End Clients Section -->
     </div>
-
+<script src="assets/js/home-slider.js"></script>
 @endsection

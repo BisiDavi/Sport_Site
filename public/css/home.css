@@ -51,16 +51,35 @@
     border-radius: 5px;
 }
 
+.event{
+    margin:auto;php 
+}
+
 /**for screen less than 768px */
 @media screen and (max-width:768px){
     .home-banner{
-        margin-top: 10%;
+        margin-top: 20%;
     }
     .home-banner .text-content{
         font-size: medium;
+        margin-top:-40%;
+        margin-left: -2%;
+        line-height: 1rem;
     }
     .home-banner .text-content h1{
-        font-size: 12px;
+        font-size: 18px;
+        width:100%;
+        height: 50%;
+
+    }
+    .home-banner .text-content p{
+        margin-top: 15%;
+        font-size: 16px;
+        white-space: nowrap;
+        overflow: hidden;
+        margin-left: 12%;
+        text-overflow: ellipsis;
+        max-width: 300px;
     }
     .home-banner img{
         width: 50%;
@@ -72,5 +91,20 @@
   }
   .about-academy img{
       width: 50%;
+  }
+
+  .container-fluid h1{
+      font-size: 1.5rem;
+      margin-top: 7%;
+      margin-bottom: 2%;
+  }
+
+  .card{
+      width: 100%;
+      padding:5%;
+  }
+
+  .card img{
+      width: 100%;
   }
 }

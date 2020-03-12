@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Bubblegum+Sans|Caveat+Brush|Chewy|Lobster+Two');
 
 
+@media screen and (min-width: 900px){
+    .container-fluid .logo{
+        margin-left: 5%;
+    }
+}
+
+
 body {
     width: 100%;
     height: 100%;
