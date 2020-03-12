@@ -81,7 +81,7 @@
             <h4>Join Our Newsletter</h4>
             <p>Oh yeah, it's good to have you onboard! </p>
             <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
+              <input type="email" name="email"><input type="submit" style="background-color:#7F2AA7;" value="Subscribe">
             </form>
           </div>
         </div>
@@ -142,7 +142,7 @@
     </div>
   </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+  <a href="#" style="background-color: #7F2AA7;" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>

@@ -1,13 +1,38 @@
-.container-fluid h1 {
-    text-align: center;
-    margin: 2%;
-}
-
 .about-section h1{
     text-align: center;
     padding: 5%;
 }
 
+.img-background{
+    position: relative;
+    margin-left: 0%;
+}
+
+.about-academy .images{
+    margin-left: 0%;
+    padding: 1%;
+}
+
+.academy-text{
+    margin-top: 6%;
+    width: 80%;
+}
+
+.academy-text h1{
+    max-width: 80%;
+}
+
+.academy-text p{
+    max-width: 70%;
+}
+
+
+.volleyball{
+    position: absolute;
+    margin-top: 10%;
+    left:0;
+    margin-left: 10%;
+}
 
 .home-banner img{
     position: relative;
@@ -15,16 +40,28 @@
 
 .home-banner .text-content{
     position: absolute;
-    margin-top: -30%;
+    margin-top: -40%;
     width: 35%;
-    margin-left: 10%;
+    margin-left: 0%;
     font-size: 24px;
     font-family: Roboto;
 }
 
 .text-content h1{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
     font-weight: bold;
     width: 100%;
+    color:purple;
+    margin-left: 7%;
+}
+
+.text-content p{
+    margin-left: 7%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: lighter;
 }
 
 .home-banner .image-content{
@@ -52,7 +89,7 @@
 }
 
 .event{
-    margin:auto;php 
+    margin:auto;
 }
 
 /**for screen less than 768px */
