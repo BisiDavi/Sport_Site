@@ -1,14 +1,15 @@
 @extends('layout')
 
 @section('content')
-<link rel="stylesheet" href="css/home.css">
-<link rel="stylesheet" href="css/home-slider.css">
-<link rel="stylesheet" href="asset/js/home-slider.js">
+<link rel="stylesheet" href="{{asset('css/home.css')}}">
+<link rel="stylesheet" href="{{asset('css/home-slider.css')}}">
+<link rel="stylesheet" href="{{asset('asset/js/home-slider.js')}}">
+<link href="{{asset('assets/vendor/aos/aos.css')}}')}}" rel="stylesheet">
 
     <div class="container-fluid">
         <div class="row">
           <div class="home-banner col-md-12 col-sm-12 col-xs-12">
-                <img src="img/home-banner-1.png" alt="banner" style="width:100%;margin-left:0% !important;padding-left:0%;">
+                <img src="img/home-banner-1.png" class="img-fluid animated"alt="banner" style="width:100%;margin-left:0% !important;padding-left:0%;">
                 <div class="text-content" style="text-align:left">
                     <h1 class="">Africa Sport <br><span style="color: #7F2AA7;"> Academy</span></h1>
                     <p>
@@ -20,19 +21,19 @@
         </div>
 
         <div class="row about-academy mt-3 mb-5" id="about-academy">
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 images">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 images" data-aos="fade-up" data-aos-delay="100">
                 <img class="img-background" src="{{asset('img/Rectangle 16.png')}}">
                 <img class="volleyball" src="{{asset('img/about 1.png')}}">
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 academy-text">
-                <h1>ABOUT THE ACADEMY</h1>
-                <p>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 academy-text" data-aos="fade-up" data-aos-delay="100">
+                <h1 data-aos="fade-up">ABOUT THE ACADEMY</h1>
+                <p data-aos="fade-up" data-aos-delay="100">
                     Authentic African Sports Academy is an independent residential sports college for boys
                     and girls. It combines education with sports along with a special focus on football
                         development.
                 </p>
                         <br>
-                <p class="d-none d-lg-block"> Academy is designed to help aspiring players hone their football skills,
+                <p class="d-none d-lg-block data-aos="fade-up" data-aos-delay="100""> Academy is designed to help aspiring players hone their football skills,
                         place them in limelight, and facilitate their discovery and recruitment into the big clubs
                         to play alongside football stars of their dreams
                 </p>
@@ -47,7 +48,7 @@
         <div class="section-title" data-aos="fade-up">
             <h2>News & Blog</h2>
             <div class="row">
-                <div class="col-sm-6 col-md-4 col-lg-4 mt-4">
+                <div class="col-sm-6 col-md-4 col-lg-4 align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
                     <div class="card shadow-lg p-3 mb-5 rounded">
                         <img class="card-img-top" src="{{asset('img/players-picture.png')}}">
                         <div class="card-block">
@@ -69,8 +70,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-4 mt-4 d-none d-lg-block">
-                    <div class="card shadow-lg p-3 mb-5 rounded">
+                <div class="col-sm-6 col-md-4 col-lg-4 align-items-stretch mt-4 d-none d-lg-block" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="card shadow-lg p-3 mb-5  rounded">
                         <img class="card-img-top" src="{{asset('img/players-picture.png')}}">
                         <div class="card-block">
                             <figure class="profile">
@@ -91,8 +92,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-4 mt-4">
-                    <div class="card shadow-lg p-3 mb-5 rounded">
+                <div class="col-sm-6 col-md-4 col-lg-4 align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="card shadow-lg p-3 mb-5  rounded">
                         <img class="card-img-top" src="{{asset('img/players-picture.png')}}">
                         <div class="card-block">
                             <figure class="profile">

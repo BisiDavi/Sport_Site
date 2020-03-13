@@ -17,8 +17,8 @@
         <h3>Personal Information</h3>
     </div>
 
-    <form>
-    <div class="form-row">
+    <form class="php-email-form">
+    <div class="form-row align-items-stretch aos-init aos-animate">
         <div class="form-group col-md-6">
         <label for="surname">Surname</label>
         <input type="text" class="form-control form-control-lg" id="inputEmail4" placeholder="Surname">
