@@ -1,10 +1,10 @@
 @extends('layout')
 
 @section('content')
-<link rel="stylesheet" href="{{asset('css/home.css')}}">
-<link rel="stylesheet" href="{{asset('css/home-slider.css')}}">
-<link rel="stylesheet" href="{{asset('asset/js/home-slider.js')}}">
-<link href="{{asset('assets/vendor/aos/aos.css')}}')}}" rel="stylesheet">
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/home-slider.css">
+<link rel="stylesheet" href="assets/js/home-slider.js">
+<link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
     <div class="container-fluid">
         <div class="row">
