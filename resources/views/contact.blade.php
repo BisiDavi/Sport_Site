@@ -2,8 +2,9 @@
 @section('content')
 
 <div class="container-fluid">
-    <div class="row">
+    <div class="row top-banner">
         <img src="{{asset('img/banner.png')}}" class="top-banner" alt="banner" style="width:100%">
+        <h3>Contact</h3>
     </div>
 </div>
 

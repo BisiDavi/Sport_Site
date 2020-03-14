@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sport Academy</title>
+    <title>{{setting('site.title')}}</title>
 
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="img/codepen.png" rel="icon">
+  <link href="img/codepen.png" rel="apple-touch-icon">
 
 
     <!-- Vendor CSS Files -->
@@ -55,7 +55,7 @@
     <div class="container-fluid mr-auto d-flex">
       <div class="logo mr-auto d-flex">
         <a href="/"><img src="{{asset('img/codepen.png')}}" alt="logo" class="img-fluid mr-2 banner-home"></a>
-        <h1 class="text-light"><a href="/">Sport Academy</a></h1>
+        <h1 class="text-light"><a href="/">{{setting('site.title')}}</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
       </div>
       <!-- start nav -->
@@ -75,6 +75,7 @@
     </header>
     <!-- End Header -->
 
+    {{-- {{menu('Front-end_Menu')}} --}}
 
     @yield('content')
 
@@ -100,7 +101,7 @@
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 d-sm-none d-sm-block d-xs-none d-xs-block footer-contact" data-aos="fade-up" data-aos-delay="100">
                 <div class="logo-bottom mr-auto d-flex mb-2 mt-2">
                     <a href="/"><img src="{{asset('img/codepen footer.png')}}" alt="logo" class="img-fluid mr-2"></a>
-                    <h1><a href="/">Sport Academy</a></h1>
+                <h1><a href="/">{{ setting('site.title')}}</a></h1>
                     <!-- Uncomment below if you prefer to use an image logo -->
                 </div>
                 <p>
@@ -141,7 +142,7 @@
 
     <div class="container py-4">
       <div class="copyright">
-        &copy; Copyright <strong><span>Sport Academy</span></strong>. All Rights Reserved
+      &copy; Copyright <strong><span>{{ setting('site.title') }}</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
       </div>

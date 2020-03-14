@@ -37,6 +37,19 @@ form .btn-primary{
     margin-bottom: 2%;
 }
 
+.top-banner img{
+    position: relative;
+}
+
+.top-banner h3{
+    position: absolute;
+    color: white;
+    margin-top: 12%;
+    text-align: center;
+    margin-left: 45%;
+
+}
+
 
 @media screen and (max-width:768px){
     .container-fluid #banner-home {

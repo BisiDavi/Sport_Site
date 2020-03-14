@@ -1,9 +1,9 @@
 @extends('layout')
 @section('content')
-<h1>Gallery Page</h1>
 <div class="container-fluid">
-    <div class="row">
+    <div class="row top-banner">
         <img src="{{asset('img/banner.png')}}" class="top-banner" alt="banner" style="width:100%">
+        <h3>Gallery</h3>
     </div>
 
     <div class="container video m-5">

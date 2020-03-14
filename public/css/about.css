@@ -1,0 +1,17 @@
+.culture h1{
+    text-align: center;
+    margin: 3%;
+}
+
+.about-banner img{
+    position: relative;
+}
+
+.about-banner h3{
+    position: absolute;
+    color: white;
+    margin-top: 12%;
+    text-align: center;
+    margin-left: 40%;
+
+}

@@ -1,8 +1,9 @@
 @extends('layout')
 
 <div class="container-fluid">
-    <div class="row">
+    <div class="row top-banner">
         <img src="{{asset('img/banner.png')}}" class="top-banner" alt="banner" style="width:100%">
+
 
         <div class="container mt-5 mb-5">
             <h6>March 11, 2020</h6>

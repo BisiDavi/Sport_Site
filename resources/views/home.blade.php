@@ -66,7 +66,7 @@
                         </div>
                         <div class="card-footer">
                             <small>Last updated 3 mins ago</small>
-                            <button class="btn btn-secondary float-right btn-sm">show</button>
+                            <a href="/blog"><button class="btn btn-secondary float-right btn-sm">show</button></a>
                         </div>
                     </div>
                 </div>
@@ -88,7 +88,7 @@
                         </div>
                         <div class="card-footer">
                             <small>Last updated 3 mins ago</small>
-                            <button class="btn btn-secondary float-right btn-sm">show</button>
+                            <a href="/blog"><button class="btn btn-secondary float-right btn-sm">show</button></a>
                         </div>
                     </div>
                 </div>
@@ -99,7 +99,7 @@
                             <figure class="profile">
                                 <img src="{{asset('img/players-picture.png')}}"   class="profile-avatar" alt="">
                             </figure>
-                            <h4 class="card-title mt-3">1st At National football compertition</h4>
+                            <h4 class="card-title mt-3">1st At National football competition</h4>
                             <div class="meta">
                                 <a>Friends</a>
                             </div>
@@ -110,7 +110,7 @@
                         </div>
                         <div class="card-footer">
                             <small>Last updated 3 mins ago</small>
-                            <button class="btn btn-secondary float-right btn-sm">show</button>
+                            <a href="/blog"><button class="btn btn-secondary float-right btn-sm">show</button></a>
                         </div>
                     </div>
                 </div>
@@ -120,7 +120,7 @@
     </section>
 
 
-
+{{--
     <div class="container my-auto">
         <h1 style="text-align: center" class="m-5">Upcoming Events</h1>
             <div class="event ">
@@ -193,7 +193,7 @@
                 </div>
                 <hr>
             </div>
-    </div>
+    </div> --}}
 
         <!-- ======= Clients Section ======= -->
         <section id="clients" class="clients section-bg">
