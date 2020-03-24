@@ -7,7 +7,7 @@
 
 @section('content')
     
-    @include('home-slider')
+    @include('HomeSlider')
     
     <div class="container-fluid" id="main">
       <div class="row about-academy" id="about-academy">
@@ -70,7 +70,7 @@
             </div>
             <div class="border border-gray m-3"></div>
 
-            <div class="row d-flex">
+            <div class="row d-flex d-sm-none d-md-block  d-none d-sm-block">
               <div class="d-flex">
                 <img  class="w-75 h-75 p-3"src="assets/img/Rectangle 21.png"/>
                 <p style="width:70%;padding:2px;">Authentic African Sports Academy is an independent residential sports college for boys and girls. It combines education with sports along with a special focus on football development</p>            
