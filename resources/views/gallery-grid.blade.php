@@ -19,10 +19,7 @@ Replace '0' with corresponding slide number.
 <div class="row" id="gallery" data-toggle="modal" data-target="#exampleModal">
   <div class="col-12 col-sm-6 col-lg-3">
     <img class="w-100" src="https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ" alt="First slide" data-target="#carouselExample" data-slide-to="0">
-  </div>
-  <div class="col-12 col-sm-6 col-lg-3">
-    <img class="w-100" src="https://images.unsplash.com/photo-1546534505-d534e27ecb35?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ" alt="First slide" data-target="#carouselExample" data-slide-to="1">
-  </div>
+  </div>  
   <div class="col-12 col-sm-6 col-lg-3">
     <img class="w-100" src="https://images.unsplash.com/photo-1546111380-cfca9a43dd85?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ" alt="First slide" data-target="#carouselExample" data-slide-to="2">
   </div>
@@ -54,10 +51,7 @@ This part is straight out of Bootstrap docs. Just a carousel inside a modal.
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img class="d-block w-100" src="https://images.unsplash.com/photo-1546853020-ca4909aef454?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ" alt="First slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="https://images.unsplash.com/photo-1546534505-d534e27ecb35?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ" alt="Second slide">
-            </div>
+            </div>            
             <div class="carousel-item">
               <img class="d-block w-100" src="https://images.unsplash.com/photo-1546111380-cfca9a43dd85?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ" alt="Third slide">
             </div>
@@ -80,16 +74,6 @@ This part is straight out of Bootstrap docs. Just a carousel inside a modal.
       </div>
     </div>
   </div>
-</div>
-
-
-<!-- Custom Styling Toggle. For demo purposes only. -->
-<div class="switch-wrap">
-  <label class="switch">
-    <input type="checkbox" id="styleSwitch" onclick="switchStyle();">
-    <span class="slider round"></span>
-  </label>
-  <span class="switch-text">Toggle between <em>Bootstrap defaults</em> and <em>custom styling</em>.</span>
 </div>
 
 @endsection
