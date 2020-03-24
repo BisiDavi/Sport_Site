@@ -35,7 +35,7 @@
             </div>
           </div>
           <h1 class="text-center m-5">Upcoming Events</h1>
-          <div class="events container">
+          <!-- <div class="events container">
             <div class="row d-flex p-1">
               <div class="card">
                 <img style="width:20vw;" src="assets/img/banner7.jpg" alt="">
@@ -47,7 +47,8 @@
                 <img style="width:25vw;" src="assets/img/Banner1.png" alt="">
               </div>
             </div>
-          </div>           
+          </div>            -->
+          @include('gallery-grid')
         </div>    
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
           <div class="card shadow-lg p-3 mb-3 bg-white rounded">
