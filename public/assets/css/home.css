@@ -1,0 +1,65 @@
+.container-fluid #main {
+    margin-top: -20% !important;
+}
+
+.about-academy .col-lg-8.col-md-8.col-sm-8.col-xs-12 {
+    padding: 0px;
+}
+
+.academy-text {
+    width: 80%;
+    margin-left: 5%;
+}
+
+@media screen and (min-width: 900px) {
+    .volleyball {
+        position: absolute;
+        margin-top: 3%;
+        left: 0;
+        margin-left: 4%;
+        width: 40%;
+    }
+    .img-background {
+        width: 25vw;
+    }
+    .academy-text p {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .academy-text button {
+        margin-left: 10%;
+    }
+}
+
+/**for screen less than 768px */
+@media screen and (max-width: 768px) {
+    .about-academy img {
+        width: 90%;
+    }
+
+    .academy-text {
+        width: 100%;
+    }
+
+    .academy-text p {
+        width: 100%;
+    }
+
+    .academy-text h1 {
+        text-align: center;
+    }
+    .container-fluid h1 {
+        font-size: 1.5rem;
+        margin-top: 7%;
+        margin-bottom: 2%;
+    }
+
+    .card {
+        width: 100%;
+        padding: 5%;
+    }
+
+    .card img {
+        width: 100%;
+    }
+}

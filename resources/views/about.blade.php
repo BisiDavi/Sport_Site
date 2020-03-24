@@ -1,12 +1,12 @@
 @extends('layout')
 @section('content')
 
-<link rel="stylesheet" href="{{asset('css/about.css')}}">
+<link rel="stylesheet" href="{{asset('assets/css/about.css')}}">
 
     <div class="container-fluid">
 
         <div class="row about-banner">
-            <img src="{{asset('img/banner.png')}}" class="top-banner" alt="banner" style="width:100%">
+            <img src="{{asset('assets/img/banner.png')}}" class="top-banner" alt="banner" style="width:100%">
             <h3>ABOUT THE ACADEMY</h3>
         </div>
 
@@ -37,7 +37,7 @@
 
             <div class="row culture">
                 <div class="col-md-4 col-sm-4 col-xs-12">
-                <img src="{{asset('img/vision-img.png')}}" class="mb-3" alt="vision image">
+                <img src="{{asset('assets/img/vision-img.png')}}" class="mb-3" alt="vision image">
                 <h1>Vision</h1>
                 <p>
                     Authentic African Sports Academy is an independent residential sports college for boys and girls. It combines education with sports along with a special focus on football development. The academy is designed to help aspiring players hone their football skills, place them in the limelight, and facilitate their discovery and recruitment
@@ -45,7 +45,7 @@
                 </p>
                 </div>
                 <div class="col-md-4 col-sm-4 col-xs-12">
-                    <img src="{{asset('img/mission-img.png')}}" class="mb-3" alt="mission image">
+                    <img src="{{asset('assets/img/mission-img.png')}}" class="mb-3" alt="mission image">
                     <h1>Mission</h1>
                     <p>
                         Authentic African Sports Academy is an independent residential sports college for boys and girls. It combines education with sports along with a special focus on football development. The academy is designed to help aspiring players hone their football skills, place them in the limelight, and facilitate their discovery and recruitment
@@ -53,7 +53,7 @@
                     </p>
                 </div>
                     <div class="col-md-4 col-sm-4 col-xs-12">
-                        <img src="{{asset('img/core-values-img.png')}}" class="mb-3" alt="core values image">
+                        <img src="{{asset('assets/img/core-values-img.png')}}" class="mb-3" alt="core values image">
                         <h1>Core Values</h1>
                         <p>
                             Authentic African Sports Academy is an independent residential sports college for boys and girls. It combines education with sports along with a special focus on football development. The academy is designed to help aspiring players hone their football skills, place them in the limelight, and facilitate their discovery and recruitment
