@@ -1,14 +1,20 @@
 @extends('layout')
 
+@section('title')
+  Home
+@endsection
+
 @section('link')
   <link rel="stylesheet" href="assets/css/home.css">
-  <link rel="stylesheet" href="assets/css/home-slider.css">
+  <link rel="stylesheet" href="assets/css/home-slider.css">  
+  <link rel="stylesheet" href="assets/css/preloader.css">
 @endsection
 
 @section('content')
     
     @include('HomeSlider')
     
+
     <div class="container-fluid" id="main">
       <div class="row about-academy" id="about-academy">
         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">                      
@@ -96,7 +102,7 @@
       <div class="container">
 
         <div class="section-title">
-          <h2 data-aos="fade-in">Services</h2>
+          <h2 data-aos="fade-in" class="text-center">Services</h2>
           <p data-aos="fade-in">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
@@ -153,7 +159,8 @@
         </div>
 
       </div>
-    </section><!-- End Services Section -->
+    </section>
+    <!-- End Services Section -->
 
 
 <!-- ======= Clients Section ======= -->
@@ -175,5 +182,8 @@
 </section>
     <!-- End Clients Section -->
 </div>
+@endsection
 
+@section('preloader-js')
+<script src="assets/js/preloader.js"></script>
 @endsection

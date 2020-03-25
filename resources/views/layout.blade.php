@@ -3,8 +3,7 @@
 <head>
   <!-- include link page -->
     @include('head-links')
-
-    @yield('link')
+    @yield('link')        
 </head>
 
 <body>
@@ -37,5 +36,6 @@
 
    @include('footer-links')
 
+@yield('preloader-js')
 </body>
 </html>

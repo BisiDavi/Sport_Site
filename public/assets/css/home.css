@@ -33,16 +33,28 @@
 
 /**for screen less than 768px */
 @media screen and (max-width: 768px) {
-    .about-academy img {
-        width: 90%;
+    img.volleyball {
+        margin-left: 5%;
+        /* position: absolute; */
+        margin-top: -43%;
+        max-width: 70%;
     }
 
+    .about-academy img {
+        width: 50%;
+        position: relative;
+    }
+    .abt {
+        padding: 0px;
+        margin: 0px;
+        width: 50%;
+    }
     .academy-text {
-        width: 100%;
+        width: 50%;
     }
 
     .academy-text p {
-        width: 100%;
+        width: 50%;
     }
 
     .academy-text h1 {

@@ -1,4 +1,4 @@
-﻿<div style="padding:0px; margin:0px; background-color:#fff;font-family:arial,helvetica,sans-serif,verdana,'Open Sans'">
+﻿<div classhome.c="jssor" style="padding:0px; margin:0px; background-color:#fff;font-family:arial,helvetica,sans-serif,verdana,'Open Sans'">
 
     <!-- #region Jssor Slider Begin -->
     <!-- Generator: Jssor Slider Composer -->
