@@ -1,5 +1,4 @@
-@extends('layout')
-@section('content')
+
 <div class="container-fluid">
     <div class="row top-banner">
         <img src="{{asset('assets/img/banner.png')}}" class="top-banner" alt="banner" style="width:100%">
@@ -46,4 +45,4 @@
         </div>
     </div>
 </div>
-@endsection
+

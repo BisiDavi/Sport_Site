@@ -25,7 +25,6 @@
 
     <!-- include the header -->
     @include('header')
-    <!-- End Header -->
 
     @yield('content')
 
@@ -36,6 +35,6 @@
 
    @include('footer-links')
 
-@yield('preloader-js')
+<!-- @yield('preloader-js') -->
 </body>
 </html>

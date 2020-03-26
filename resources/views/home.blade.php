@@ -7,92 +7,91 @@
 @section('link')
   <link rel="stylesheet" href="assets/css/home.css">
   <link rel="stylesheet" href="assets/css/home-slider.css">  
-  <link rel="stylesheet" href="assets/css/preloader.css">
+  <link rel="stylesheet" href="assets/css/preloader.css">  
 @endsection
 
 @section('content')
     
     @include('HomeSlider')
     
-
     <div class="container-fluid" id="main">
       <div class="row about-academy" id="about-academy">
-        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">                      
-          <h1 data-aos="fade-up" class="text-center pb-5">ABOUT THE ACADEMY</h1>
-          <div class="about-us-image d-flex"  data-aos="fade-up" data-aos-delay="100">
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12"> 
+          <div class="section-titl">
+            <h3 class="text-center pb-3">ABOUT THE ACADEMY</h3>
+          </div>                     
+          <div class="about-us-image d-flex">
             <div class="abt">
               <img class="img-background" src="{{asset('assets/img/Rectangle 16.png')}}">
               <img class="volleyball" src="{{asset('assets/img/about 1.png')}}">
             </div>
                       
-            <div class="academy-text data-aos="fade-up" data-aos-delay="100">              
+            <div class="academy-text" data-aos="fade-up" data-aos-delay="100">              
               <p data-aos="fade-up" data-aos-delay="100">
                   Authentic African Sports Academy is an independent residential sports college for boys
                   and girls. It combines education with sports along with a special focus on football
                       development.
               </p>
                   
-              <p class="d-none d-lg-block data-aos="fade-up" data-aos-delay="100""> Academy is designed to help aspiring players hone their football skills,
-                      place them in lime light, and facilitate their discovery and recruitment into the big clubs
-                      to play alongside football stars of their dreams
+              <p class="d-none d-lg-block" data-aos="fade-up" data-aos-delay="100""> 
+                  Academy is designed to help aspiring players hone their football skills,
+                  place them in lime light, and facilitate their discovery and recruitment into the big clubs
+                  to play alongside football stars of their dreams
               </p>
 
                 <button  class="btn" type="button" href="#" style="color:white;background: #7F2AA7;border: 1px solid #7F2AA7;box-sizing: border-box;">Read More</button>
             </div>
           </div>
-          <h1 class="text-center m-5">Upcoming Events</h1>
-          <div class="events container">
-            <div class="row d-flex p-1">
-              <div class="card">
-                <img style="width:20vw;" src="assets/img/banner7.jpg" alt="">
-              </div>
-              <div class="card">
-                <img style="width:20vw;" src="assets/img/banner9.jpg" alt="">
-              </div>
-              <div class="card">
-                <img style="width:25vw;" src="assets/img/Banner1.png" alt="">
-              </div>
+          <div>
+            <div class="section-titl text-center">
+              <h3 class="text-center m-4 p-2">Upcoming Events</h3>            
             </div>
-          </div>                   
+            <div class="events container">
+              <div class="row d-flex p-1">
+                <div class="card">                
+                  <img style="width:20vw;" src="assets/img/event.png" />
+                </div>
+                <div class="card">
+                  <img style="width:20vw;" src="assets/img/event.png" />
+                </div>
+                <div class="card">
+                  <img style="width:20vw;" src="assets/img/event.png" />
+                </div>
+              </div>
+            </div>  
+          </div>                
+
         </div>    
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
           <div class="card shadow-lg p-3 mb-3 bg-white rounded">
-            <h1 class="text-center">Blog</h1>
-            <div class="row">
+            <div class="section-titl">
+              <h3 class="text-center">Blog</h3>              
+            </div>
+            <div data-aos="fade-up" data-aos-delay="200"  class="row">
               <div class="d-flex">
                 <img  class="w-75 h-75 p-3"src="assets/img/Rectangle 21.png"/>
                 <p style="width:70%;padding:2px;">Authentic African Sports Academy is an independent residential sports college for boys and girls. It combines education with sports along with a special focus on football development</p>            
               </div>              
-                <a style="margin-left:75%;" href="#">Read More</a>              
+              <a style="margin-left:75%;" href="#"><i class="icofont-arrow-right"></i> Read More</a>               
             </div>
             <div class="border border-gray m-3"></div>
 
-            <div class="row d-flex">
+            <div data-aos="fade-up" data-aos-delay="300"  class="row d-flex">
               <div class="d-flex">
                 <img  class="w-75 h-75 p-3"src="assets/img/Rectangle 21.png"/>
                 <p style="width:70%;padding:2px;">Authentic African Sports Academy is an independent residential sports college for boys and girls. It combines education with sports along with a special focus on football development</p>            
               </div>
-              <a style="margin-left:75%;" href="#">Read More</a> 
+              <a style="margin-left:75%;" href="#"><i class="icofont-arrow-right"></i> Read More</a>
             </div>
             <div class="border border-gray m-3"></div>
 
-            <div class="row d-flex d-sm-none d-md-block  d-none d-sm-block">
+            <div data-aos="fade-up" data-aos-delay="400"  class="row d-flex d-sm-none d-md-block">
               <div class="d-flex">
                 <img  class="w-75 h-75 p-3"src="assets/img/Rectangle 21.png"/>
                 <p style="width:70%;padding:2px;">Authentic African Sports Academy is an independent residential sports college for boys and girls. It combines education with sports along with a special focus on football development</p>            
               </div>
-              <a style="margin-left:75%;" href="#">Read More</a> 
-            </div>
-            <div class="border border-gray m-3"></div>
-
-            <div class="row d-flex">
-              <div class="d-flex">
-                <img  class="w-75 h-75 p-3"src="assets/img/Rectangle 21.png"/>
-                <p style="width:70%;padding:2px;">Authentic African Sports Academy is an independent residential sports college for boys and girls. It combines education with sports along with a special focus on football development</p>            
-              </div>
-              <a style="margin-left:75%;" href="#">Read More</a> 
-            </div>
-                             
+              <a style="margin-left:75%;" href="#"><i class="icofont-arrow-right"></i> Read More</a>
+            </div>            
           </div>          
         </div>
       </div>
@@ -100,17 +99,16 @@
     <!-- ======= Services Section ======= -->
     <section id="services" class="services section-bg">
       <div class="container">
-
         <div class="section-title">
-          <h2 data-aos="fade-in" class="text-center">Services</h2>
+          <h3 data-aos="fade-in" class="text-center m-3 p-2">Services</h3>
           <p data-aos="fade-in">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
         <div class="row">
-          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-right">
+          <div class="col-md-6 col-sm-3 d-flex d-sm-none d-md-block align-items-stretch" data-aos="fade-right">
             <div class="card">
               <div class="card-img">
-                <img src="assets/img/banner9.jpg" alt="...">
+                <img src="assets/img/banner9.jpg" width="100%" alt="...">
               </div>
               <div class="card-body">
                 <h5 class="card-title"><a href="">Temporibus laudantium</a></h5>
@@ -119,10 +117,10 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-left">
+          <div class="col-md-6 col-sm-3 d-flex d-sm-none d-md-block align-items-stretch" data-aos="fade-left">
             <div class="card">
               <div class="card-img">
-                <img src="assets/img/banner8.jpg" alt="...">
+                <img src="assets/img/banner8.jpg" width="100%" alt="...">
               </div>
               <div class="card-body">
                 <h5 class="card-title"><a href="">Aperiores voluptates</a></h5>
@@ -132,10 +130,10 @@
             </div>
 
           </div>
-          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-right">
+          <div class="col-md-6 col-sm-3 d-flex align-items-stretch" data-aos="fade-right">
             <div class="card">
               <div class="card-img">
-                <img src="assets/img/services-3.jpg" alt="...">
+                <img src="assets/img/banner7.jpg" width="100%" alt="...">
               </div>
               <div class="card-body">
                 <h5 class="card-title"><a href="">Veritatis natus nisi</a></h5>
@@ -144,10 +142,10 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-left">
+          <div class="col-md-6 col-sm-3 d-flex align-items-stretch" data-aos="fade-left">
             <div class="card">
               <div class="card-img">
-                <img src="assets/img/services-4.jpg" alt="...">
+                <img src="assets/img/banner2.jpg" width="100%" alt="...">
               </div>
               <div class="card-body">
                 <h5 class="card-title"><a href="">Aliquam veritatis</a></h5>
@@ -167,7 +165,7 @@
 <section id="clients" class="clients section-bg">
     <div class="container">
     <div class="section-title" data-aos="fade-up">
-        <h2>Partners</h2>
+        <h3 class="text-center mb-5 p-2">Partners</h3>
     </div>
     <div class="owl-carousel clients-carousel" data-aos="fade-up" data-aos-delay="100">
         <img src="{{asset('assets/img/fifa.png')}}" alt="">

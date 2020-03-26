@@ -34,27 +34,35 @@
 /**for screen less than 768px */
 @media screen and (max-width: 768px) {
     img.volleyball {
-        margin-left: 5%;
-        /* position: absolute; */
-        margin-top: -43%;
-        max-width: 70%;
+        margin-left: 3%;
+        position: absolute;
+        margin-top: 4%;
+        width: 50%;
+        left: 0;
     }
 
     .about-academy img {
-        width: 50%;
-        position: relative;
+        max-width: 100%;
+        /* position: relative; */
     }
     .abt {
         padding: 0px;
         margin: 0px;
-        width: 50%;
+        max-width: 50%;
+        height: 50%;
     }
+
     .academy-text {
-        width: 50%;
+        width: 80%;
+        margin-left: -7%;
+    }
+
+    .academy-text .btn {
+        margin-left: 22%;
     }
 
     .academy-text p {
-        width: 50%;
+        margin-left: 25%;
     }
 
     .academy-text h1 {
@@ -67,7 +75,7 @@
     }
 
     .card {
-        width: 100%;
+        max-width: 100%;
         padding: 5%;
     }
 

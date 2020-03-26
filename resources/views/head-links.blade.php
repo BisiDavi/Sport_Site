@@ -3,12 +3,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{setting('site.title')}} - @yield('title')</title>
 
-<!-- Favicons -->
+    <!-- Favicons -->
     <link href="assets/img/codepen.png" rel="icon">
     <link href="assets/img/codepen.png" rel="apple-touch-icon">
     
     <link rel="stylesheet" href="assets/css/layout.css">    
-    <link rel="stylesheet" href="assets/css/style.css">    
+    <link rel="stylesheet" href="assets/css/style.css">        
     
     <!-- Vendor CSS Files -->    
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> 

@@ -1,0 +1,126 @@
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+#gallery {
+    margin: 0 auto;
+    padding: 1vw;
+    font-size: 1.6rem;
+}
+
+#gallery h1 {
+    font-weight: normal;
+    color: white;
+}
+
+#gallery .number {
+    color: white;
+}
+/* #gallery #header #logo:before {
+    content: "THE";
+    margin-right: 0.5rem;
+    font-weight: 300;
+}
+
+#gallery #header #logo:after {
+    content: "GALLERY";
+    font-size: 5vh;
+    font-weight: 900;
+} */
+
+#gallery #images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#gallery #images .figure {
+    position: relative;
+    width: 10vw;
+    height: 28rem;
+    margin: 0.2vh;
+    background-size: cover;
+    overflow: hidden;
+    cursor: pointer;
+    background: rgb(144, 141, 161);
+}
+
+#gallery #images .figure .image {
+    position: relative;
+    display: block;
+    object-fit: cover;
+    min-height: 50%;
+    max-width: 50%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    user-select: none;
+}
+
+#gallery #images .figure .caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+}
+
+#gallery #images .figure .body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4vw 4vw;
+}
+
+#gallery #images .figure .text {
+    position: relative;
+    font-size: 1.6rem;
+    opacity: 0;
+    transform: translateY(5vh);
+    transition: all 0.4s ease-in-out;
+    transition-delay: 0.1s;
+}
+
+#gallery #images .figure hr {
+    width: 50%;
+    border: 0;
+    border-bottom: 4px solid rgba(255, 255, 255, 0.2);
+}
+
+#gallery #images .figure:hover .image {
+    opacity: 0.6;
+    transform: scale3d(1.2, 1.2, 1.2);
+}
+
+#gallery #images .figure:hover .text {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media only screen and (max-width: 48rem) {
+    #gallery {
+        padding: 0;
+    }
+
+    #gallery #images .figure {
+        width: 46vw;
+    }
+}
+
+@media only screen and (max-width: 32rem) {
+    #gallery {
+        padding: 0;
+    }
+
+    #gallery #images {
+        flex-direction: column;
+    }
+
+    #gallery #images .figure {
+        width: 50%;
+        margin: 0.5vh 0;
+    }
+}
