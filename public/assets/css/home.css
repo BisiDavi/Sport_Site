@@ -33,6 +33,36 @@
 
 /**for screen less than 768px */
 @media screen and (max-width: 768px) {
+    div#jssor_1 {
+        margin-top: 7% !important;
+    }
+    .col-lg-4.col-md-4.col-sm-4.col-xs-12.blogpost {
+        margin-top: 7% !important;
+    }
+    .events .card {
+        width: 50%;
+    }
+    .events .event-3 {
+        display: none;
+    }
+
+    .blog-post img {
+        width: 50%;
+        height: 50%;
+    }
+
+    .blog-aside .post-3 {
+        display: none;
+    }
+
+    .row .service-3 .card {
+        display: none;
+    }
+
+    .row .service-4 .card {
+        display: none;
+    }
+
     img.volleyball {
         margin-left: 3%;
         position: absolute;
@@ -76,10 +106,10 @@
 
     .card {
         max-width: 100%;
-        padding: 5%;
+        padding: 1%;
     }
 
-    .card img {
+    .new-event img {
         width: 100%;
     }
 }

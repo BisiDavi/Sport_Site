@@ -47,47 +47,46 @@
               <h3 class="text-center m-4 p-2">Upcoming Events</h3>            
             </div>
             <div class="events container">
-              <div class="row d-flex p-1">
-                <div class="card">                
-                  <img style="width:20vw;" src="assets/img/event.png" />
+              <div class="row d-flex mx-auto">
+                <div class="card shadow-lg mb-3 bg-white rounded new-event ">                
+                  <img class="img-fluid" src="assets/img/event.png" />
                 </div>
-                <div class="card">
-                  <img style="width:20vw;" src="assets/img/event.png" />
+                <div class="card shadow-lg mb-3 bg-white rounded new-event">
+                  <img class="img-fluid" src="assets/img/event.png" />
                 </div>
-                <div class="card">
-                  <img style="width:20vw;" src="assets/img/event.png" />
+                <div class="card shadow-lg mb-3 bg-white rounded  event-3">
+                  <img class="img-fluid" src="assets/img/event.png" />
                 </div>
               </div>
             </div>  
           </div>                
-
         </div>    
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-          <div class="card shadow-lg p-3 mb-3 bg-white rounded">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 blogpost">
+          <div class="card shadow-lg p-3 mb-3 bg-white rounded blog-aside">
             <div class="section-titl">
               <h3 class="text-center">Blog</h3>              
             </div>
             <div data-aos="fade-up" data-aos-delay="200"  class="row">
-              <div class="d-flex">
-                <img  class="w-75 h-75 p-3"src="assets/img/Rectangle 21.png"/>
+              <div class="d-flex blog-post">
+                <img  class="rounded img-fluid float-left p-3"src="assets/img/Rectangle 21.png"/>
                 <p style="width:70%;padding:2px;">Authentic African Sports Academy is an independent residential sports college for boys and girls. It combines education with sports along with a special focus on football development</p>            
               </div>              
-              <a style="margin-left:75%;" href="#"><i class="icofont-arrow-right"></i> Read More</a>               
+              <a  href="#"><i class="icofont-arrow-right float-right"></i> Read More</a>               
             </div>
             <div class="border border-gray m-3"></div>
 
             <div data-aos="fade-up" data-aos-delay="300"  class="row d-flex">
-              <div class="d-flex">
-                <img  class="w-75 h-75 p-3"src="assets/img/Rectangle 21.png"/>
+              <div class="d-flex blog-post">
+                <img  class="rounded float-left p-3"src="assets/img/Rectangle 21.png"/>
                 <p style="width:70%;padding:2px;">Authentic African Sports Academy is an independent residential sports college for boys and girls. It combines education with sports along with a special focus on football development</p>            
               </div>
               <a style="margin-left:75%;" href="#"><i class="icofont-arrow-right"></i> Read More</a>
             </div>
             <div class="border border-gray m-3"></div>
 
-            <div data-aos="fade-up" data-aos-delay="400"  class="row d-flex d-sm-none d-md-block">
-              <div class="d-flex">
-                <img  class="w-75 h-75 p-3"src="assets/img/Rectangle 21.png"/>
+            <div data-aos="fade-up" data-aos-delay="400"  class="row d-flex post-3">
+              <div class="d-flex blog-post">
+                <img  class="rounded float-left p-3"src="assets/img/Rectangle 21.png"/>
                 <p style="width:70%;padding:2px;">Authentic African Sports Academy is an independent residential sports college for boys and girls. It combines education with sports along with a special focus on football development</p>            
               </div>
               <a style="margin-left:75%;" href="#"><i class="icofont-arrow-right"></i> Read More</a>
@@ -105,7 +104,7 @@
         </div>
 
         <div class="row">
-          <div class="col-md-6 col-sm-3 d-flex d-sm-none d-md-block align-items-stretch" data-aos="fade-right">
+          <div class="service-1 col-md-6 col-sm-3 d-flex d-sm-none d-md-block align-items-stretch" data-aos="fade-right">
             <div class="card">
               <div class="card-img">
                 <img src="assets/img/banner9.jpg" width="100%" alt="...">
@@ -117,7 +116,8 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-sm-3 d-flex d-sm-none d-md-block align-items-stretch" data-aos="fade-left">
+
+          <div class="service-2 col-md-6 col-sm-3 d-flex d-sm-none d-md-block align-items-stretch" data-aos="fade-left">
             <div class="card">
               <div class="card-img">
                 <img src="assets/img/banner8.jpg" width="100%" alt="...">
@@ -128,9 +128,9 @@
                 <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Read More</a></div>
               </div>
             </div>
-
           </div>
-          <div class="col-md-6 col-sm-3 d-flex align-items-stretch" data-aos="fade-right">
+
+          <div class="service-3 col-md-6 col-sm-3 d-flex align-items-stretch" data-aos="fade-right">
             <div class="card">
               <div class="card-img">
                 <img src="assets/img/banner7.jpg" width="100%" alt="...">
@@ -142,7 +142,8 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-sm-3 d-flex align-items-stretch" data-aos="fade-left">
+
+          <div class="service-4 col-md-6 col-sm-3 d-flex align-items-stretch" data-aos="fade-left">
             <div class="card">
               <div class="card-img">
                 <img src="assets/img/banner2.jpg" width="100%" alt="...">
@@ -154,8 +155,8 @@
               </div>
             </div>
           </div>
+          
         </div>
-
       </div>
     </section>
     <!-- End Services Section -->
