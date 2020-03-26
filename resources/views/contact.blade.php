@@ -3,7 +3,7 @@
 @section('title')
 Contact us
 @endsection
-
+ 
 @section('content')
 
 <div class="container-fluid">

@@ -38,7 +38,7 @@
                 </ul>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 footer-links" data-aos="fade-up" data-aos-delay="300">
-                <h1>Contact the Academy</h1>
+                <h1>Contact De Skyballers</h1>
                 <form>
                     <div class="row">
                         <div class="form-group col-md-6 col-sm-6">

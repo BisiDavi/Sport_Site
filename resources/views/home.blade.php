@@ -18,7 +18,7 @@
       <div class="row about-academy" id="about-academy">
         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12"> 
           <div class="section-titl">
-            <h3 class="text-center pb-3">ABOUT THE ACADEMY</h3>
+            <h3 class="text-center pb-3">About De SkyBallers</h3>
           </div>                     
           <div class="about-us-image d-flex">
             <div class="abt">
