@@ -2,7 +2,7 @@
 
 @section('title')
 Our Gallery
-@section
+@endsection
 
 @section('link')
     <link rel="stylesheet" href="assets/css/gallery.css">
