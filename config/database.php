@@ -45,7 +45,7 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'url' => env('https://www.db4free.net/'),
+            'url' => env('https://www.db4free.net/phpMyAdmin/db_structure.php?server=1&db=sportdatabase'),
             'host' => env('DB_HOST', 'db4free.net'),
             'port' => env('DB_PORT', '3306'),
             'database' => env('DB_DATABASE', 'sportdatabase'),
