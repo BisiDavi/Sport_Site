@@ -45,12 +45,12 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'url' => env('DATABASE_URL'),
-            'host' => env('DB_HOST', 'remotemysql.com'),
+            'url' => env('sport-harvoxx.herokuapp.com'),
+            'host' => env('DB_HOST', 'db4free.net'),
             'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'tF3xM918PB'),
-            'username' => env('DB_USERNAME', 'tF3xM918PB'),
-            'password' => env('DB_PASSWORD', 'bcYNMVHU1A'),
+            'database' => env('DB_DATABASE', 'sportdatabase'),
+            'username' => env('DB_USERNAME', 'olubisi'),
+            'password' => env('DB_PASSWORD', 'OLUBISI5256'),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
