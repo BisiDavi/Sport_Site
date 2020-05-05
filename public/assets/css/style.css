@@ -261,6 +261,7 @@ h6,
 .services .card-img img {
     max-width: 100%;
     transition: all 0.3s ease-in-out;
+    height:300px;
 }
 
 .services .card-body {
