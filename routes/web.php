@@ -11,12 +11,11 @@ use Illuminate\Support\Facades\Route;
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
 |
-*/
-
+ */
 
 Route::get('/', 'HomeController@index');
 
-Route::get('/about', 'AboutController@index');
+Route::get('about', 'AboutController@index');
 
 Route::get('/contact', 'ContactController@index');
 
@@ -28,7 +27,7 @@ Route::get('/blog', 'BlogController@index');
 
 Route::get('/admission', 'AdmissionController@index');
 
-Route::get('/home', function(){
+Route::get('/home', function () {
     $posts = App\Post::all();
     return view('welcome', compact('posts'));
 });

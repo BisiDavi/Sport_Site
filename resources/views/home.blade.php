@@ -6,34 +6,34 @@
 
 @section('link')
   <link rel="stylesheet" href="assets/css/home.css">
-  <link rel="stylesheet" href="assets/css/home-slider.css">  
-  <link rel="stylesheet" href="assets/css/preloader.css">  
+  <link rel="stylesheet" href="assets/css/home-slider.css">
+  <link rel="stylesheet" href="assets/css/preloader.css">
 @endsection
 
 @section('content')
-    
+
     @include('HomeSlider')
-    
+
     <div class="container-fluid" id="main">
       <div class="row about-academy" id="about-academy">
-        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12"> 
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
           <div class="section-titl">
             <h3 class="text-center pb-3">About De SkyBallers</h3>
-          </div>                     
+          </div>
           <div class="about-us-image d-flex">
             <div class="abt">
               <img class="img-background" src="{{asset('assets/img/Rectangle 16.png')}}">
               <img class="volleyball" src="{{asset('assets/img/about 1.png')}}">
             </div>
-                      
-            <div class="academy-text" data-aos="fade-up" data-aos-delay="100">              
+
+            <div class="academy-text" data-aos="fade-up" data-aos-delay="100">
               <p data-aos="fade-up" data-aos-delay="100">
                   Authentic African Sports Academy is an independent residential sports college for boys
                   and girls. It combines education with sports along with a special focus on football
                       development.
               </p>
-                  
-              <p class="d-none d-lg-block" data-aos="fade-up" data-aos-delay="100""> 
+
+              <p class="d-none d-lg-block" data-aos="fade-up" data-aos-delay="100"">
                   Academy is designed to help aspiring players hone their football skills,
                   place them in lime light, and facilitate their discovery and recruitment into the big clubs
                   to play alongside football stars of their dreams
@@ -44,11 +44,11 @@
           </div>
           <div>
             <div class="section-titl text-center">
-              <h3 class="text-center m-4 p-2">Upcoming Events</h3>            
+              <h3 class="text-center m-4 p-2">Upcoming Events</h3>
             </div>
             <div class="events container">
               <div class="row d-flex mx-auto">
-                <div class="card shadow-lg mb-3 bg-white rounded new-event ">                
+                <div class="card shadow-lg mb-3 bg-white rounded new-event ">
                   <img class="img-fluid" src="assets/img/event.png" />
                 </div>
                 <div class="card shadow-lg mb-3 bg-white rounded new-event">
@@ -58,27 +58,27 @@
                   <img class="img-fluid" src="assets/img/event.png" />
                 </div>
               </div>
-            </div>  
-          </div>                
-        </div>    
+            </div>
+          </div>
+        </div>
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 blogpost">
           <div class="card shadow-lg p-3 mb-3 bg-white rounded blog-aside">
             <div class="section-titl">
-              <h3 class="text-center">Blog</h3>              
+              <h3 class="text-center">Blog</h3>
             </div>
             <div data-aos="fade-up" data-aos-delay="200"  class="row">
               <div class="d-flex blog-post">
                 <img  class="rounded img-fluid float-left p-3"src="assets/img/Rectangle 21.png"/>
-                <p style="width:70%;padding:2px;">Authentic African Sports Academy is an independent residential sports college for boys and girls. It combines education with sports along with a special focus on football development</p>            
-              </div>              
-              <a  href="#"><i class="icofont-arrow-right float-right"></i> Read More</a>               
+                <p style="width:70%;padding:2px;">Authentic African Sports Academy is an independent residential sports college for boys and girls. It combines education with sports along with a special focus on football development</p>
+              </div>
+              <a  href="#"><i class="icofont-arrow-right float-right"></i> Read More</a>
             </div>
             <div class="border border-gray m-3"></div>
 
             <div data-aos="fade-up" data-aos-delay="300"  class="row d-flex">
               <div class="d-flex blog-post">
                 <img  class="rounded float-left p-3"src="assets/img/Rectangle 21.png"/>
-                <p style="width:70%;padding:2px;">Authentic African Sports Academy is an independent residential sports college for boys and girls. It combines education with sports along with a special focus on football development</p>            
+                <p style="width:70%;padding:2px;">Authentic African Sports Academy is an independent residential sports college for boys and girls. It combines education with sports along with a special focus on football development</p>
               </div>
               <a style="margin-left:75%;" href="#"><i class="icofont-arrow-right"></i> Read More</a>
             </div>
@@ -87,11 +87,11 @@
             <div data-aos="fade-up" data-aos-delay="400"  class="row d-flex post-3">
               <div class="d-flex blog-post">
                 <img  class="rounded float-left p-3"src="assets/img/Rectangle 21.png"/>
-                <p style="width:70%;padding:2px;">Authentic African Sports Academy is an independent residential sports college for boys and girls. It combines education with sports along with a special focus on football development</p>            
+                <p style="width:70%;padding:2px;">Authentic African Sports Academy is an independent residential sports college for boys and girls. It combines education with sports along with a special focus on football development</p>
               </div>
               <a style="margin-left:75%;" href="#"><i class="icofont-arrow-right"></i> Read More</a>
-            </div>            
-          </div>          
+            </div>
+          </div>
         </div>
       </div>
 
@@ -100,18 +100,22 @@
       <div class="container">
         <div class="section-title">
           <h3 data-aos="fade-in" class="text-center m-3 p-2">Services</h3>
-          <p data-aos="fade-in">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h4 data-aos="fade-in">CONSULTANCY SERVICES</h4>
+          <p data-aos="fade-in">We offer all round consultancy services in sports and sports related matters.</p>
         </div>
 
         <div class="row">
           <div class="service-1 col-md-6 col-sm-3 d-flex d-sm-none d-md-block align-items-stretch" data-aos="fade-right">
             <div class="card">
               <div class="card-img">
-                <img src="assets/img/banner9.jpg" width="100%" alt="...">
+                <img src="assets/img/malefitness.jpg" width="100%" alt="...">
               </div>
               <div class="card-body">
-                <h5 class="card-title"><a href="">Temporibus laudantium</a></h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                <h5 class="card-title"><a href="">HEALTH, WELLNESS AND FITNESS CAMPAIGN</a></h5>
+                <ul class="card-text">
+                <li>Dish out strategies that can help improve quality of life for people of various ages and abilities.</li>
+                <li>Bring light to topics such as athletic injury management, sport and exercise psychology, anatomy, biomechanics, wellness management strategies and many more.</li>
+                </ul>
                 <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Read More</a></div>
               </div>
             </div>
@@ -120,11 +124,14 @@
           <div class="service-2 col-md-6 col-sm-3 d-flex d-sm-none d-md-block align-items-stretch" data-aos="fade-left">
             <div class="card">
               <div class="card-img">
-                <img src="assets/img/banner8.jpg" width="100%" alt="...">
+                <img src="assets/img/femalefitness.jpg" width="100%" alt="...">
               </div>
               <div class="card-body">
-                <h5 class="card-title"><a href="">Aperiores voluptates</a></h5>
-                <p class="card-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
+                <h5 class="card-title"><a href="">ACADEMY / TRAINING</a></h5>
+                <ul class="card-text">
+                 <li>We have set up a professional and sustainable training platform where sportsperson of all ages and levels will have the chance to attain their full potential under the tutelage of passionate, disciplined and certified training crew.</li>
+                 <li>Our clients/athletes acquire individually streamed training programs and sessions that are designed uniquely to enhance their talents, while developing the skills and techniques of the athlete, group or team across a wide range of sporting disciplines.</li>
+                </ul>
                 <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Read More</a></div>
               </div>
             </div>
@@ -133,11 +140,14 @@
           <div class="service-3 col-md-6 col-sm-3 d-flex align-items-stretch" data-aos="fade-right">
             <div class="card">
               <div class="card-img">
-                <img src="assets/img/banner7.jpg" width="100%" alt="...">
+                <img src="assets/img/football.jpg" width="100%" alt="...">
               </div>
               <div class="card-body">
-                <h5 class="card-title"><a href="">Veritatis natus nisi</a></h5>
-                <p class="card-text">Nemo enim ipsam voluptatem quia voluptas sit aut odit aut fugit, sed quia magni dolores eos qui ratione voluptatem sequi nesciunt Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet</p>
+                <h5 class="card-title"><a href="">SPORT FESTIVALS / TALENT HUNT SHOWS</a></h5>
+                <ul class="card-text">
+                 <li>Several unique sport festivals are to be organized for various sports, age, sex, regions of the country. These festivals come with our own unique concept and programs.</li>
+                 <li>We have a sustainable template that we follow which ensures ha the ultimate goal of the festival is achieved. We partner with lots of organizations, firms, and individuals etc. to ensure that each festival is a huge success</li>
+                </ul>
                 <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Read More</a></div>
               </div>
             </div>
@@ -149,13 +159,48 @@
                 <img src="assets/img/banner2.jpg" width="100%" alt="...">
               </div>
               <div class="card-body">
-                <h5 class="card-title"><a href="">Aliquam veritatis</a></h5>
-                <p class="card-text">Nostrum eum sed et autem dolorum perspiciatis. Magni porro quisquam laudantium voluptatem. In molestiae earum ab sit esse voluptatem. Eos ipsam cumque ipsum officiis qui nihil aut incidunt aut</p>
+                <h5 class="card-title"><a href="">ATHLETE MANAGEMENT</a></h5>
+                <ul class="card-text">
+                  <li>This is what makes De skyballers international exceptional; we have set up a beautiful and dynamic system that consists of seasoned and passionate professionals that carries out standard and productive athlete management.</li>
+                  <li>Our team ensures that every athlete grows not just in skills but in value. We make all the moves, create the required environment, partnerships and attract the best of deals to our athletes. We manage each athlete to stand out as a personal brand that is sell-able anywhere in the world.</li>
+                </ul>
                 <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Read More</a></div>
               </div>
             </div>
           </div>
-          
+
+          <div class="service-5 col-md-6 col-sm-3 d-flex align-items-stretch" data-aos="fade-left">
+            <div class="card">
+              <div class="card-img">
+                <img src="assets/img/banner2.jpg" width="100%" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title"><a href="">SALES AND SUPPLY OF SPORTS MATERIALS</a></h5>
+                <ul class="card-text">
+                  <li>We cover the whole ground in supply and sales of all types of sports materials. We place premium on quality over quantity, we go for the best and that sets us apart. We deliver to our clients even in bulk quantities.</li>
+                  <li>We of course, partner with the best brands in the world to deliver on quality sport materials.</li>
+                </ul>
+                <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Read More</a></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-6 col-md-6 col-sm-3 d-flex align-items-stretch" data-aos="fade-left">
+            <div class="card">
+              <div class="card-img">
+                <img src="assets/img/banner2.jpg" width="100%" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title"><a href="">BOOT CAMPS/LIFESTYLE</a></h5>
+                <ul class="card-text">
+                  <li>We believe in the power of influence, networks, and collaborations; hence, we organize boot camps cities to create a sweet-sweet environment for athletes to be influenced positively, network with big stars in the industry and collaborate effectively to grow.</li>
+                  <li>Our Lifestyle project is exceptional and plays a key role in the development process. Celebrities, stars, big wigs in sports administration within the country and beyond are all part this initiative.</li>
+                </ul>
+                <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Read More</a></div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
