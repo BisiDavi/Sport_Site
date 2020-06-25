@@ -28,16 +28,13 @@
 
             <div class="academy-text" data-aos="fade-up" data-aos-delay="100">
               <p data-aos="fade-up" data-aos-delay="100">
-                  Authentic African Sports Academy is an independent residential sports college for boys
-                  and girls. It combines education with sports along with a special focus on football
-                      development.
+                 At De SkyBallers, we promote sports by setting up platforms and programs that enhances the discovery and
+harnessing of talents across every age and region while adopting international best practices
               </p>
 
-              <p class="d-none d-lg-block" data-aos="fade-up" data-aos-delay="100"">
-                  Academy is designed to help aspiring players hone their football skills,
-                  place them in lime light, and facilitate their discovery and recruitment into the big clubs
-                  to play alongside football stars of their dreams
-              </p>
+              <p class="d-none d-lg-block" data-aos="fade-up" data-aos-delay="100">
+       We are well-organized and competitive on international stage.
+          We operates with progressive, modern standard and sustainable policies.</p>
 
                 <button  class="btn" type="button" href="#" style="color:white;background: #7F2AA7;border: 1px solid #7F2AA7;box-sizing: border-box;">Read More</button>
             </div>
