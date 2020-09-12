@@ -80,7 +80,7 @@ h6,
     z-index: 997;
     transition: all 0.5s;
     padding: 0;
-    background: #fff;
+    background: #9fa6ad;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -95,14 +95,15 @@ h6,
 
 #header .logo h1 a,
 #header .logo h1 a:hover {
-    color: #7a6960;
+    color: white;
     text-decoration: none;
 }
 
 #header .logo img {
-    padding: 0;
-    margin: 0;
-    max-height: 40px;
+    border-radius: 50%;
+    margin-top: -15px;
+    max-height: 68px;
+    box-shadow: 2px 1px 30px black;
 }
 
 #main {
@@ -129,17 +130,25 @@ h6,
 .nav-menu a {
     display: block;
     position: relative;
-    color: #4e4039;
+    color: white !important;
     padding: 10px 15px;
     transition: 0.3s;
     font-size: 15px;
     font-family: "Open Sans", sans-serif;
 }
 
+.nav-menu li a {
+    color: white !important;
+}
+
+header li a:hover {
+    color: red !important;
+}
+
 .nav-menu a:hover,
 .nav-menu .active > a,
 .nav-menu li:hover > a {
-    color: #7f2aa7;
+    color: red;
     text-decoration: none;
 }
 
@@ -193,6 +202,37 @@ h6,
 .nav-menu .drop-down ul .active > a,
 .nav-menu .drop-down ul li:hover > a {
     color: #eb5d1e;
+}
+
+/* ===================HOME==================== */
+a i.icofont-arrow-right.float-right {
+    margin-top: 5px;
+}
+
+.core-values {
+    box-shadow: 1px 2px 20px gray;
+}
+
+.vision {
+    margin-left: -15px;
+}
+
+.blogpost a:hover {
+    color: red;
+    animation: all 0.5s ease-in;
+}
+.blogpost a {
+    text-decoration: none !important;
+}
+
+#blogcontent {
+    position: relative;
+}
+
+#blogcontent a {
+    position: absolute;
+    right: 30px;
+    bottom: 18px;
 }
 
 .nav-menu .drop-down > a:after {
@@ -472,6 +512,8 @@ h6,
     background-color: #eb5d1e !important;
 }
 
+/* 54516992 */
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -481,6 +523,21 @@ h6,
     color: #212529;
     font-size: 14px;
     background: #fef8f5;
+}
+
+.logo-bottom.mr-auto.d-flex.mb-2.mt-2 img {
+    width: 90px;
+    border-radius: 50%;
+    margin-top: -30px;
+    box-shadow: 2px 1px 30px black;
+}
+
+.logo-bottom h1 .site-title {
+    text-decoration: none;
+}
+
+.logo-bottom h1 .site-title:hover {
+    color: red;
 }
 
 .footer-links h1 {

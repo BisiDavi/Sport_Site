@@ -31,7 +31,9 @@
    <!-- include the footer -->
    @include('footer')
   
-   <a href="#" style="background-color: #7F2AA7;" class="back-to-top"><i class="icofont-simple-up"></i></a>
+   <a href="#" style="background-color: #7F2AA7;" class="back-to-top">
+    <i class="icofont-simple-up"></i>
+   </a>
 
    @include('footer-links')
 

@@ -19,8 +19,8 @@
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 d-sm-none d-sm-block d-xs-none d-xs-block footer-contact" data-aos="fade-up" data-aos-delay="100">
                 <div class="logo-bottom mr-auto d-flex mb-2 mt-2">
-                    <a href="/"><img src="{{asset('assets/img/codepen footer.png')}}" alt="logo" class="img-fluid mr-2"></a>
-                <h1><a href="/">{{ setting('site.title')}}</a></h1>
+                    <a href="/"><img src="{{asset('assets/img/logo.jpg')}}" alt="logo" class="img-fluid mr-2"></a>
+                <h1><a class="site-title" href="/">{{ setting('site.title')}}</a></h1>
                     <!-- Uncomment below if you prefer to use an image logo -->
                 </div>
                 <p>

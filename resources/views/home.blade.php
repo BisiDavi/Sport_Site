@@ -46,7 +46,7 @@ harnessing of talents across every age and region while adopting international b
             <div class="events container">
               <div class="row d-flex mx-auto">
                 <div class="card shadow-lg mb-3 bg-white rounded new-event ">
-                  <img class="img-fluid" src="assets/img/event.png" />
+                  <img class="img-fluid" src="assets/img/upcoming_event.jpg" />
                 </div>
                 <div class="card shadow-lg mb-3 bg-white rounded new-event">
                   <img class="img-fluid" src="assets/img/event.png" />
@@ -63,30 +63,30 @@ harnessing of talents across every age and region while adopting international b
             <div class="section-titl">
               <h3 class="text-center">Blog</h3>
             </div>
-            <div data-aos="fade-up" data-aos-delay="200"  class="row">
+            <div data-aos="fade-up" id="blogcontent"  data-aos-delay="200"  class="row">
               <div class="d-flex blog-post">
                 <img  class="rounded img-fluid float-left p-3"src="assets/img/Rectangle 21.png"/>
                 <p style="width:70%;padding:2px;">Authentic African Sports Academy is an independent residential sports college for boys and girls. It combines education with sports along with a special focus on football development</p>
               </div>
-              <a  href="#"><i class="icofont-arrow-right float-right"></i> Read More</a>
+              <a  href="#"><i class="icofont-arrow-right float-right"></i>Read More</a>
             </div>
             <div class="border border-gray m-3"></div>
 
-            <div data-aos="fade-up" data-aos-delay="300"  class="row d-flex">
+            <div data-aos="fade-up" id="blogcontent" data-aos-delay="300"  class="row d-flex">
               <div class="d-flex blog-post">
                 <img  class="rounded float-left p-3"src="assets/img/Rectangle 21.png"/>
                 <p style="width:70%;padding:2px;">Authentic African Sports Academy is an independent residential sports college for boys and girls. It combines education with sports along with a special focus on football development</p>
               </div>
-              <a style="margin-left:75%;" href="#"><i class="icofont-arrow-right"></i> Read More</a>
+              <a  href="#"><i class="icofont-arrow-right float-right"></i>Read More</a>
             </div>
             <div class="border border-gray m-3"></div>
 
-            <div data-aos="fade-up" data-aos-delay="400"  class="row d-flex post-3">
+            <div data-aos="fade-up" id="blogcontent" data-aos-delay="400"  class="row d-flex post-3">
               <div class="d-flex blog-post">
                 <img  class="rounded float-left p-3"src="assets/img/Rectangle 21.png"/>
                 <p style="width:70%;padding:2px;">Authentic African Sports Academy is an independent residential sports college for boys and girls. It combines education with sports along with a special focus on football development</p>
               </div>
-              <a style="margin-left:75%;" href="#"><i class="icofont-arrow-right"></i> Read More</a>
+              <a  href="#"><i class="icofont-arrow-right float-right"></i>Read More</a>
             </div>
           </div>
         </div>

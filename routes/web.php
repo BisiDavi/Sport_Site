@@ -23,15 +23,26 @@ Route::get('/enroll', 'EnrollController@index');
 
 Route::get('gallery', 'GalleryController@index');
 
-Route::get('/blog', 'BlogController@index');
+// Route::get('/blog', 'BlogController@index');
 
 Route::get('/admission', 'AdmissionController@index');
 
-Route::get('/home', function () {
+Route::get('/blog', function () {
     $posts = App\Post::all();
-    return view('welcome', compact('posts'));
+    return view('blogpost', compact('posts'));
+});
+
+Route::get('post/{slug}', function($slug){
+	$post = App\Post::where('slug', '=', $slug)->firstOrFail();
+	return view('post', compact('post'));
 });
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
+
+// demo projects
+
+Route::get('/demo', 'CustomersController@list');
+
+Route::get('/demo/emailsubscriber', 'EmailSubscriberController@myMailList');
