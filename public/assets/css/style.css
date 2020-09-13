@@ -567,14 +567,17 @@ a i.icofont-arrow-right.float-right {
     color: black;
 }
 
+.erroralert {
+    position: absolute;
+    top: 30px;
+    left: 20%;
+}
+
 #footer .footer-newsletter form {
-    margin-top: 30px;
-    background: #fff;
-    padding: 6px 10px;
-    position: relative;
     border-radius: 4px;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
     text-align: left;
+    position: relative;
 }
 
 #footer .footer-newsletter form input[type="email"] {
@@ -760,4 +763,40 @@ a i.icofont-arrow-right.float-right {
 
 section#clients {
     margin-top: -5%;
+}
+
+textarea .message-textarea .form-control {
+    height: auto;
+    width: 110% !important;
+}
+
+#blogcontent {
+    position: relative;
+    height: 300px;
+    width: 370px;
+    margin: auto;
+}
+
+#blogcontent a {
+    position: none !important;
+    right: none !important;
+    bottom: none !important;
+}
+
+.col-lg-4.col-md-4.col-sm-4.col-xs-12.blogpost {
+    max-width: 375px !important;
+    position: absolute;
+    right: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.blogPostTitle {
+    position: absolute;
+    bottom: 40%;
+    border: 2px solid red;
+    color: white;
+    padding: 10px;
+    font-size: 17px;
+    left: 30%;
 }

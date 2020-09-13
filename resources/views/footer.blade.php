@@ -6,8 +6,16 @@
           <div class="col-lg-6">
             <h4>Join Our Newsletter</h4>
             <p>Oh yeah, it's good to have you onboard! </p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" style="background-color:#7F2AA7;" value="Subscribe">
+            <form action='enroll' method="POST">
+              <input placeholder="your email" type="email" name="newsletter_email">
+                <p class="erroralert text-center text-danger mt-3">
+                    {{$errors->first('newsletter_email')}}
+                  </p>                
+                <button type="submit" 
+                class="btn btn-danger" style="background-color:#7F2AA7;">
+                Subscribe
+              </button>              
+              @csrf
             </form>
           </div>
         </div>
@@ -42,17 +50,20 @@
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 footer-links" data-aos="fade-up" data-aos-delay="300">
                 <h1>Contact De Skyballers</h1>
-                <form>
+                <form action="/" method="POST">
                     <div class="row">
                         <div class="form-group col-md-6 col-sm-6">
-                            <input type="text" class="form-control" placeholder="Fullname">
+                            <input type="text" 
+                            name="fullname" class="form-control" placeholder="Fullname">
                         </div>
                         <div class="form-group col-md-6 col-sm-6">
-                            <input type="email" class="form-control" placeholder="Email">
+                            <input type="email" 
+                            name="email" class="form-control" placeholder="Email">
                         </div>
                     </div>
                     <div class="form-group col-md-12 col-sm-12" style="margin-left:-5%;">
-                        <textarea type="text" class="form-control" placeholder="Message" rows="3"></textarea>
+                        <textarea type="text" style="width:110%" class="message-textarea
+                        name="message"  form-control" placeholder="Message" rows="3"></textarea>
                     </div>
 
                     <button class="btn btn-secondary"  type="submit">Send</button>

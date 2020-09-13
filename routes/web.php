@@ -19,7 +19,11 @@ Route::get('about', 'AboutController@index');
 
 Route::get('/contact', 'ContactController@index');
 
+Route::post('/contact', 'ContactController@contactform');
+
 Route::get('/enroll', 'EnrollController@index');
+
+Route::post('/enroll', 'EnrollController@subscribe');
 
 Route::get('gallery', 'GalleryController@index');
 
@@ -27,12 +31,30 @@ Route::get('gallery', 'GalleryController@index');
 
 Route::get('/admission', 'AdmissionController@index');
 
+Route::post('/admission', 'AdmissionController@admissionform');
+
 Route::get('/blog', function () {
     $posts = App\Post::all();
     return view('blogpost', compact('posts'));
 });
 
-Route::get('post/{slug}', function($slug){
+// demo
+
+Route::get('/customers', 'CustomersController@list');
+
+Route::post('/customers', 'CustomersController@storeCustomers');
+
+Route::get('/emailsubscriber', 'EmailSubscriberController@myMailList');
+
+Route::post('/emailsubscriber', 'EmailSubscriberController@storeSubscriber');
+// end of demo
+
+Route::get('/pages', function(){
+    $pages = App\Page::all();
+    return view('pages', compact('pages'));
+});
+
+Route::get('/{slug}', function($slug){
 	$post = App\Post::where('slug', '=', $slug)->firstOrFail();
 	return view('post', compact('post'));
 });
@@ -43,6 +65,3 @@ Route::group(['prefix' => 'admin'], function () {
 
 // demo projects
 
-Route::get('/demo', 'CustomersController@list');
-
-Route::get('/demo/emailsubscriber', 'EmailSubscriberController@myMailList');

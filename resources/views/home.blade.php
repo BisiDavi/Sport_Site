@@ -41,26 +41,53 @@ harnessing of talents across every age and region while adopting international b
           </div>
           <div>
             <div class="section-titl text-center">
-              <h3 class="text-center m-4 p-2">Upcoming Events</h3>
+              <h3 class="text-center m-3 p-2">Upcoming Events</h3>
             </div>
             <div class="events container">
               <div class="row d-flex mx-auto">
                 <div class="card shadow-lg mb-3 bg-white rounded new-event ">
                   <img class="img-fluid" src="assets/img/upcoming_event.jpg" />
+                  <p></p>
                 </div>
-                <div class="card shadow-lg mb-3 bg-white rounded new-event">
+                <!-- <div class="card shadow-lg mb-3 bg-white rounded new-event">
                   <img class="img-fluid" src="assets/img/event.png" />
                 </div>
                 <div class="card shadow-lg mb-3 bg-white rounded  event-3">
                   <img class="img-fluid" src="assets/img/event.png" />
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
         </div>
+
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 blogpost">
+          <div class="card shadow-lg p-3 mb-3 bg-white rounded blog-aside" >
+            <div class="section-title">
+              <h3 class="text-center">Blog</h3>
+            </div>
+            <div style="display:grid; grid-template-rows:repeat(4,1fr)" class="blogcontainer">
+              @foreach($posts as $post)
+                <div  id="blogcontent" class="row">
+                  <div class="blog-post">
+                    <a href="/{{ $post->slug }}">
+                      <img  class="rounded img-fluid float-left p-3" src="{{ Voyager::image( $post->image ) }}" style="width:400px;height:300px">
+                      <span>
+                        <h3 
+                        class="blogPostTitle text-center m-2" >
+                        {{ $post->title }}
+                        </h3>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              @endforeach
+            </div>
+			    </div>
+		    </div>
+  
+        <!-- <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 blogpost">
           <div class="card shadow-lg p-3 mb-3 bg-white rounded blog-aside">
-            <div class="section-titl">
+            <div class="section-title">
               <h3 class="text-center">Blog</h3>
             </div>
             <div data-aos="fade-up" id="blogcontent"  data-aos-delay="200"  class="row">
@@ -91,7 +118,7 @@ harnessing of talents across every age and region while adopting international b
           </div>
         </div>
       </div>
-
+ -->
     <!-- ======= Services Section ======= -->
     <section id="services" class="services section-bg">
       <div class="container">

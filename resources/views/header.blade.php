@@ -1,7 +1,7 @@
 <header id="header" class="fixed-top">
   <div class="container-fluid mr-auto mt-3 mb-3 d-flex">
     <div class="logo mr-auto d-flex">
-      <a href="/"><img src="{{asset('assets/img/de_skyballers.jpg')}}" alt="logo" class="img-fluid mr-2 banner-home"></a>
+  <a href="/"><img src="{{asset('assets/img/de_skyballers.jpg')}}" alt="logo" class="img-fluid mr-2 banner-home"></a>
       <h1 class="text-light">
         <a href="/">
           {{setting('site.title')}}
