@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'HomeController@index');
 
+Route::post('/gallery', 'HomeController@footercontactform');
+
 Route::get('about', 'AboutController@index');
 
 Route::get('/contact', 'ContactController@index');

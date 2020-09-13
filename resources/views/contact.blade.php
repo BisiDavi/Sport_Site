@@ -1,8 +1,7 @@
 @extends('layout')
 
-@section('title')
-Contact us
-@endsection
+@section('title','Contact us')
+
  
 @section('content')
 
@@ -13,7 +12,7 @@ Contact us
     </div>
 </div>
 
-    <div class="container">
+<div class="container">
         <div class="form-title">
             <h1 class="mt-3 mb-3">Contact</h1>
             <p>Please fill in the below information in block letters only and please make sure all information given are very accurate.</p>
@@ -21,39 +20,50 @@ Contact us
         </div>
 
 
-        <form action="contact" method="POST">
-            <div class="form-group">
-            <label for="surname">Fullname</label>
-            <input type="text" name="fullname"  class="form-control form-control-lg" id="inputEmail4" placeholder="Fullname">
-            </div>
-
-            <div class="form-group">
-            <label for="surname">Email</label>
-            <input type="text"  name="email"
-             class="form-control form-control-lg" id="inputEmail4" placeholder="Email">
-            </div>
-
-            <div class="form-group">
-                <label for="address">Phone Number</label>
-                <input type="text" name="phone_number"  class="form-control form-control-lg" placeholder="Phone Number">
-            </div>
-
-            <div class="form-group">
-            <label for="surname">Message</label>
-            <textarea type="text"  name="message" class="form-control" rows='5' id="inputEmail4" placeholder="Message"></textarea>
-            </div>
-
-            <div class="error-alert">
+    <form action="contact" method="POST">
+        <div class="form-group">
+            <div class="d-block">
+                <label for="surname">Fullname</label>
+                <input type="text" name="fullname"  
+                value="{{ old("") }}" class="form-control" id="inputEmail4" placeholder="Fullname">
                 <p class="text-danger"> {{$errors->first('fullname')}} </p>
-                <p class="text-danger"> {{$errors->first('email')}} </p>
-                <p class="text-danger"> {{$errors->first('phone_number')}} </p>
-                <p class="text-danger"> {{$errors->first('message')}}</p>                
             </div>
+        </div>
 
-            <button type="submit" class="btn btn-primary">Submit</button>
+        <div class="form-group">
+            <div class="d-block">
+                <label for="surname">Email</label>
+                <input type="text"  name="your_email"
+                value="{{ old("your_email") }}" 
+                class="form-control" id="inputEmail4" placeholder="Email">
+                <p class="text-danger"> {{$errors->first('your_email')}} </p>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="d-block">
+                <label for="address">Phone Number</label>
+                <input type="text" name="phone_number"  
+                value="{{ old("phone_number") }}" class="form-control" placeholder="Phone Number">
+                <p class="text-danger"> {{$errors->first('phone_number')}} </p> 
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="d-block">
+                <label for="surname">Message</label>
+                <textarea type="text"  name="message" 
+                value="{{ old("message") }}" class="form-control" rows='5' id="inputEmail4" placeholder="Message"></textarea>
+                <p class="text-danger"> {{$errors->first('message')}}</p>  
+            </div>
+        </div>
+
+       <button type="submit" class="btn btn-primary">
+           Submit
+       </button>
 
             @csrf
-        </form>
+    </form>
 
-    </div>
+</div>
 @endsection

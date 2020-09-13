@@ -1,4 +1,8 @@
 @extends('layout')
+
+@section('title','about us')
+
+
 @section('content')
 
 <link rel="stylesheet" href="{{asset('assets/css/about.css')}}">

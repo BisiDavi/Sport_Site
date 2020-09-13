@@ -20,6 +20,7 @@ class AdmissionController extends Controller
             'other_name' => 'required',
             'email' => 'email|min:7',
             'phone_number' => 'required',
+            'city' => 'required',
             'date_of_birth' => 'required',
             'home_address' => 'required',
             'name_of_school' => 'required',

@@ -49,24 +49,32 @@
                 </ul>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 footer-links" data-aos="fade-up" data-aos-delay="300">
-                <h1>Contact De Skyballers</h1>
-                <form action="/" method="POST">
+                <h1 class="text-center">Contact De Skyballers</h1>
+                <form action="gallery" method="POST">
                     <div class="row">
                         <div class="form-group col-md-6 col-sm-6">
                             <input type="text" 
-                            name="fullname" class="form-control" placeholder="Fullname">
+                            name="full_name" class="form-control" placeholder="Fullname">
                         </div>
                         <div class="form-group col-md-6 col-sm-6">
                             <input type="email" 
-                            name="email" class="form-control" placeholder="Email">
+                            name="user_email" class="form-control" placeholder="Email">
                         </div>
                     </div>
                     <div class="form-group col-md-12 col-sm-12" style="margin-left:-5%;">
-                        <textarea type="text" style="width:110%" class="message-textarea
-                        name="message"  form-control" placeholder="Message" rows="3"></textarea>
+                        <textarea type="text" 
+                        style="width:110%" class="message-textarea"
+                        name="user_message"  form-control" placeholder="Message" rows="3"></textarea>
+                    </div>
+
+                    <div class="error-alert">
+                    <p class="text-danger"> {{$errors->first('full_name')}} </p>
+                    <p class="text-danger"> {{$errors->first('user_email')}} </p>                    
+                    <p class="text-danger"> {{$errors->first('user_message')}}</p>                
                     </div>
 
                     <button class="btn btn-secondary"  type="submit">Send</button>
+                    @csrf
                 </form>
             </div>
         </div>

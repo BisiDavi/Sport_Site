@@ -526,7 +526,7 @@ a i.icofont-arrow-right.float-right {
 }
 
 .logo-bottom.mr-auto.d-flex.mb-2.mt-2 img {
-    width: 90px;
+    width: 68px;
     border-radius: 50%;
     margin-top: -30px;
     box-shadow: 2px 1px 30px black;
@@ -565,6 +565,16 @@ a i.icofont-arrow-right.float-right {
     line-height: 1;
     font-weight: 600;
     color: black;
+}
+
+.col-lg-4.col-md-4.col-sm-4.col-xs-4.d-sm-none.d-sm-block.d-xs-none.d-xs-block.footer-contact.aos-init.aos-animate {
+    margin-left: -30px;
+    position: relative;
+}
+
+.footer-contact .site-title {
+    position: absolute;
+    top: -3px;
 }
 
 .erroralert {

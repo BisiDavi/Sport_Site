@@ -1,8 +1,6 @@
 @extends('layout')
 
-@section('title')
-Admission
-@endsection
+@section('title', 'Admission')
 
 @section('link')
 <link rel="stylesheet" href="{{asset('assets/css/admission.css')}}">
@@ -29,71 +27,99 @@ Admission
     <form class="php-email-form" action="admission" method="POST">
     <div class="form-row align-items-stretch aos-init aos-animate">
         <div class="form-group col-md-6">
+            <div class="d-block">
         <label for="surname">Surname</label>
-        <input type="text" class="form-control form-control-lg" id="inputEmail4" name="surname" placeholder="Surname">
+        <input type="text" class="form-control" id="inputEmail4" 
+        value="{{ old('surname')}}" name="surname" placeholder="Surname">
+        <p class="text-danger">{{$errors->first('surname')}}</p>
+
+        </div>
         </div>
         <div class="form-group col-md-6">
+            <div class="d-block">
         <label for="other-name">Other Name</label>
-        <input type="text" name="other_name" class="form-control form-control-lg" id="inputPassword4" placeholder="Other Name">
+        <input type="text" name="other_name" class="form-control"
+        value="{{ old('other_name')}}"  id="inputPassword4" placeholder="Other Name">
+        <p class="text-danger">{{$errors->first('other_name')}}</p>
+        </div>
         </div>
     </div>
     <div class="form-row">
         <div class="form-group col-md-6">
+            <div class="d-block">
         <label for="inputEmail4">Email</label>
-        <input type="email" name="email" class="form-control form-control-lg" id="inputEmail4" placeholder="Email">
+        <input type="email" name="email" class="form-control" 
+        value="{{ old('email')}}" id="inputEmail4" placeholder="Email">
+        <p class="text-danger">{{$errors->first('email')}}</p>
+
+        </div>
         </div>
         <div class="form-group col-md-6">
+            <div class="d-block">
         <label for="inputPassword4">Phone Number</label>
-        <input type="number" name="phone_number" class="form-control form-control-lg"  placeholder="Phone Number">
+        <input type="number" name="phone_number"
+        value="{{ old('phone_number')}}"  class="form-control"  placeholder="Phone Number">
+        <p class="text-danger">{{$errors->first('phone_number')}}</p>
+
+        </div>
         </div>
     </div>
 
     <div class="form-row">
         <div class="form-group col-md-6">
+            <div class="d-block">
         <label for="inputEmail4">Date of Birth</label>
-        <input type="date"  name="date_of_birth" class="form-control form-control-lg" id="date" placeholder="Date of Birth">
+        <input type="date"  name="date_of_birth" class="form-control" 
+        value="{{ old('date_of_birth')}}" id="date" placeholder="Date of Birth">
+        <p class="text-danger">{{$errors->first('date_of_birth')}}</p>
+        </div>
         </div>
         <div class="form-group col-md-6">
+            <div class="d-block">
         <label for="inputPassword4">Current City</label>
-        <input type="text" name="city" class="form-control form-control-lg"  placeholder="Current City">
+        <input type="text" name="city" 
+        value="{{ old('city')}}" class="form-control"  placeholder="Current City">
+        <p class="text-danger">{{$errors->first('city')}}</p>
         </div>
     </div>
-
-    <div class="form-row">
-        <div class="form-group col-md-12">
-            <label for="address">Home Address</label>
-            <input type="text"  name="home_address" class="form-control form-control-lg" placeholder="Home Address">
-        </div>
     </div>
 
-    <div class="form-title">
-        <h3>Education Background</h3>
-    </div>
+        <div class="form-row">
+            <div class="form-group col-md-12">
+                <div class="d-block">
+                    <label for="address">Home Address</label>
+                    <input type="text"  name="home_address" 
+                    value="{{ old('home_address')}}" class="form-control" placeholder="Home Address">
+                    <p class="text-danger">{{$errors->first('home_address')}}</p>
 
-    <div class="form-row">
-        <div class="form-group col-md-6">
-        <label for="school-name">Name of School</label>
-        <input type="text" name="name_of_school" class="form-control form-control-lg" placeholder="Name of School">
+            </div>
+            </div>
         </div>
-        <div class="form-group col-md-6">
-        <label for="qualification">Qualification</label>
-        <input type="text" name="qualification" class="form-control form-control-lg"  placeholder="Qualification">
+
+        <div class="form-title">
+            <h3>Education Background</h3>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <div class="d-block">
+                    <label for="school-name">Name of School</label>
+                    <input type="text" name="name_of_school" class="form-control"
+                     value="{{ old('name_of_school') }}" placeholder="Name of School">
+                    <p class="text-danger">{{$errors->first('name_of_school')}}</p>
+                </div>
+            </div>
+
+            <div class="form-group col-md-6">
+                <div class="d-block">
+                    <label for="qualification">Qualification</label>
+                    <input type="text" name="qualification" class="form-control" value="{{old('qualification')}}" "  placeholder="Qualification">
+                    <p class="text-danger">{{$errors->first('qualification')}}</p>
+                </div>
         </div>
     </div>
 
     <button type="submit" class="btn btn-primary">Submit</button>
-
-    <div class="error text-danger d-block">        
-        <p>{{$errors->first('surname')}}</p>
-        <p>{{$errors->first('other_name')}}</p>
-        <p>{{$errors->first('email')}}</p>
-        <p>{{$errors->first('phone_number')}}</p>
-        <p>{{$errors->first('date_of_birth')}}</p>
-        <p>{{$errors->first('home_address')}}</p>
-        <p>{{$errors->first('city')}}</p>
-        <p>{{$errors->first('name_of_school')}}</p>
-        <p>{{$errors->first('qualification')}}</p>
-    </div>
 
     @csrf
  </form>

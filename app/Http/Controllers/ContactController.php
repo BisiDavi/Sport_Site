@@ -14,16 +14,16 @@ class ContactController extends Controller
     }
     public function contactform()
     {
-        $data = request()->validate([
+    $data = request()->validate([
             'fullname' => 'required',
-            'email' => 'email|min:7',
+            'your_email' => 'email|min:7',
             'phone_number' => 'required',
             'message' => 'required'
         ]);
 
         $userContactUs = new Contact();
         $userContactUs->fullname = request('fullname');
-        $userContactUs->email = request('email');
+        $userContactUs->email = request('your_email');
         $userContactUs->phone_number = request('phone_number');
         $userContactUs->message = request('message');
  

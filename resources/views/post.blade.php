@@ -1,8 +1,7 @@
 @extends('layout')
 
-@section('title')
-  {{ $post->title }}
-@endsection
+@section('title', {{ $post->title }} )
+  
 
 @section('content')
 	<div class="container">
