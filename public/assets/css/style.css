@@ -301,6 +301,7 @@ a i.icofont-arrow-right.float-right {
 .services .card-img img {
     max-width: 100%;
     transition: all 0.3s ease-in-out;
+    height:300px;
 }
 
 .services .card-body {
