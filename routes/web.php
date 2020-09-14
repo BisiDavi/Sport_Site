@@ -17,9 +17,7 @@ use TCG\Voyager\Facades\Voyager;
 
 Route::get('/', 'HomeController@index');
 
-Route::post('/gallery', 'HomeController@footercontactform');
-
-Route::get('about', 'AboutController@index');
+Route::get('/about', 'AboutController@index');
 
 Route::get('/contact', 'ContactController@index');
 
@@ -29,8 +27,9 @@ Route::get('/enroll', 'EnrollController@index');
 
 Route::post('/enroll', 'EnrollController@subscribe');
 
-Route::get('gallery', 'GalleryController@index');
+Route::get('/gallery', 'GalleryController@index');
 
+Route::post('/gallery', 'HomeController@footercontactform');
 
 Route::get('/admission', 'AdmissionController@index');
 
@@ -39,17 +38,6 @@ Route::post('/admission', 'AdmissionController@admissionform');
 Route::group(['prefix' => 'admin'], function(){
     Voyager::routes();
 });
-
-Route::get('/clear-cache', function() {
-    Artisan::call('cache:clear');
-    return "Cache is cleared";
-});
-
-Route::get('/optimize-cache', function() {
-Artisan::call("optimize:clear");
-echo Artisan::output();
-});
-
 
 
 Route::get('/blog', function(){
@@ -69,6 +57,12 @@ Route::get('/{slug}', function($slug){
 });
 
 
+Route::get('/clear-cache', function() {
+    Artisan::call('cache:clear');
+    return "Cache is cleared";
+});
 
-// demo projects
-
+Route::get('/optimize-cache', function() {
+Artisan::call("optimize:clear");
+echo Artisan::output();
+});
