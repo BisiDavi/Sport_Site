@@ -30,7 +30,6 @@ Route::post('/enroll', 'EnrollController@subscribe');
 
 Route::get('gallery', 'GalleryController@index');
 
-// Route::get('/blog', 'BlogController@index');
 
 Route::get('/admission', 'AdmissionController@index');
 
@@ -44,17 +43,6 @@ Route::get('/blog', function(){
     $posts = App\Post::all();
     return view('blogpost', compact('posts'));
 });
-
-// demo
-
-Route::get('/customers', 'CustomersController@list');
-
-Route::post('/customers', 'CustomersController@storeCustomers');
-
-Route::get('/emailsubscriber', 'EmailSubscriberController@myMailList');
-
-Route::post('/emailsubscriber', 'EmailSubscriberController@storeSubscriber');
-// end of demo
 
 
 Route::get('/pages', function(){
