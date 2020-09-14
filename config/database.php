@@ -2,6 +2,13 @@
 
 use Illuminate\Support\Str;
 
+$url = parse_url("mysql://b4b3821e25012c:20f04a26@us-cdbr-east-02.cleardb.com/heroku_21e840b2c680328?reconnect=true");
+$host = $url["us-cdbr-east-02.cleardb.com"] ?? null;
+$username = $url["b4b3821e25012c"] ?? null;
+$password = $url["5UhxJJzeRZBN66F"] ?? null;
+$database = substr($url["heroku_21e840b2c680328"], 1);
+
+
 return [
 
     /*
@@ -45,12 +52,12 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'url' => env('https://www.db4free.net/phpMyAdmin/db_structure.php?server=1&db=sportdatabase'),
-            'host' => env('DB_HOST', 'db4free.net'),
+            'url' => $url,
+            'host' =>  $host,
             'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'sportdatabase'),
-            'username' => env('DB_USERNAME', 'olubisi'),
-            'password' => env('DB_PASSWORD', 'OLUBISI5256'),
+            'database' => $database,
+            'username' => $username,
+            'password' => $password,
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
@@ -58,9 +65,7 @@ return [
             'prefix_indexes' => true,
             'strict' => true,
             'engine' => null,
-            'options' => extension_loaded('pdo_mysql') ? array_filter([
-                PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
-            ]) : [],
+            'options' => ''
         ],
 
         'pgsql' => [

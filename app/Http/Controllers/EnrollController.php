@@ -20,9 +20,9 @@ class EnrollController extends Controller
             'newsletter_email' => 'required|email|min:8'
         ]);
 
-       Newsletter::create($data);
+        Newsletter::create($data);
         
-        return back();
+        return redirect('enroll')->with('message', 'Thanks for subscribing to our newsletter. Welcome on Board' );
     }
      
 }

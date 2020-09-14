@@ -21,14 +21,14 @@ class HomeController extends Controller
     {
 
         $data = request()->validate([
-            'full_name' => 'required',
-            'user_email' => 'required|email',
-            'user_message' => 'required'
+            'fullname' => 'required',
+            'contact_email' => 'required|email',
+            'message' => 'required'
         ]);
 
         FooterContactform::create($data);
 
-        return redirect('gallery')->with('message', 'Thanks for subscribing to our newsletter. Welcome on Board');
+        return redirect('gallery')->with('message', 'Thanks for contacting us.We shall get back to you shortly' );
     }
 
 }

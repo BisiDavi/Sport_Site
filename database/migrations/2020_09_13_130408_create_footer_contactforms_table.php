@@ -16,7 +16,7 @@ class CreateFooterContactformsTable extends Migration
         Schema::create('footer_contactforms', function (Blueprint $table) {
             $table->id();
             $table->string('fullname');
-            $table->string('email');
+            $table->string('contact_email');
             $table->string('message');
             $table->timestamps();
         });
