@@ -2,11 +2,12 @@
 
 use Illuminate\Support\Str;
 
+
 $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
-$host = $url["us-cdbr-east-02.cleardb.com"] ?? null;
-$username = $url["b4b3821e25012c"] ?? null;
-$password = $url["5UhxJJzeRZBN66F"] ?? null;
-$database = substr($url["heroku_21e840b2c680328"], 1);
+$host = $url["host"];
+$username = $url["user"];
+$password = $url["pass"];
+$database = substr($url["path"], 1);
 
 
 return [
