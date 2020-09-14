@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 use TCG\Voyager\Facades\Voyager;
 
@@ -38,6 +39,18 @@ Route::post('/admission', 'AdmissionController@admissionform');
 Route::group(['prefix' => 'admin'], function(){
     Voyager::routes();
 });
+
+Route::get('/clear-cache', function() {
+    Artisan::call('cache:clear');
+    return "Cache is cleared";
+});
+
+Route::get('/optimize-cache', function() {
+Artisan::call("optimize:clear");
+echo Artisan::output();
+});
+
+
 
 Route::get('/blog', function(){
     $posts = App\Post::all();
