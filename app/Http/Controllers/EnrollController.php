@@ -20,12 +20,8 @@ class EnrollController extends Controller
             'newsletter_email' => 'required|email|min:8'
         ]);
 
-        $newsletterSubscribe = new Newsletter();
-        $newsletterSubscribe->email = request('newsletter_email');
-
+       Newsletter::create($data);
         
-        $newsletterSubscribe->save();
-
         return back();
     }
      

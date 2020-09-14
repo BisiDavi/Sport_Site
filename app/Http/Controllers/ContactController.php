@@ -21,14 +21,9 @@ class ContactController extends Controller
             'message' => 'required'
         ]);
 
-        $userContactUs = new Contact();
-        $userContactUs->fullname = request('fullname');
-        $userContactUs->email = request('your_email');
-        $userContactUs->phone_number = request('phone_number');
-        $userContactUs->message = request('message');
- 
-        $userContactUs->save();
-
-        return back();
+        Contact::create($data);
+        
+        return redirect('contact')->with('message', 
+        'Thanks for making enquires, we will reach you shortly');
     }
 }

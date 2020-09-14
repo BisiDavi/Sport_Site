@@ -12,7 +12,9 @@ class HomeController extends Controller
     public function index()
     {
         $posts = Post::all();
-        return view('home', compact('posts'));
+        $threePost =collect($posts);
+        $threePost->random(3)->all();
+        return view('home', compact('threePost'));
     }
 
     public function footercontactform()
@@ -24,14 +26,9 @@ class HomeController extends Controller
             'user_message' => 'required'
         ]);
 
-        $footerContactform = new FooterContactform();
-        $footerContactform->fullname = request('full_name');
-        $footerContactform->email = request('user_email');
-        $footerContactform->message = request('user_message');
+        FooterContactform::create($data);
 
-        $footerContactform->save();
-
-        return back();
+        return redirect('gallery')->with('message', 'Thanks for subscribing to our newsletter. Welcome on Board');
     }
 
 }

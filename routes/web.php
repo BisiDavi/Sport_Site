@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use TCG\Voyager\Facades\Voyager;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,7 +36,11 @@ Route::get('/admission', 'AdmissionController@index');
 
 Route::post('/admission', 'AdmissionController@admissionform');
 
-Route::get('/blog', function () {
+Route::group(['prefix' => 'admin'], function(){
+    Voyager::routes();
+});
+
+Route::get('/blog', function(){
     $posts = App\Post::all();
     return view('blogpost', compact('posts'));
 });
@@ -51,6 +56,7 @@ Route::get('/emailsubscriber', 'EmailSubscriberController@myMailList');
 Route::post('/emailsubscriber', 'EmailSubscriberController@storeSubscriber');
 // end of demo
 
+
 Route::get('/pages', function(){
     $pages = App\Page::all();
     return view('pages', compact('pages'));
@@ -61,9 +67,7 @@ Route::get('/{slug}', function($slug){
 	return view('post', compact('post'));
 });
 
-Route::group(['prefix' => 'admin'], function () {
-    Voyager::routes();
-});
+
 
 // demo projects
 

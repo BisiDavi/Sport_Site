@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "115573262d17e7f413812f5e9916ceb5",
+    "content-hash": "064263a56804971b4e200bd60a10f65f",
     "packages": [
         {
             "name": "arrilot/laravel-widgets",
@@ -1366,6 +1366,7 @@
                     "email": "jakub.onderka@gmail.com"
                 }
             ],
+            "abandoned": "php-parallel-lint/php-console-color",
             "time": "2018-09-29T17:23:10+00:00"
         },
         {
@@ -1412,6 +1413,7 @@
                 }
             ],
             "description": "Highlight PHP code in terminal",
+            "abandoned": "php-parallel-lint/php-console-highlighter",
             "time": "2018-09-29T18:48:56+00:00"
         },
         {
@@ -2861,6 +2863,56 @@
                 "uuid"
             ],
             "time": "2020-02-21T04:36:14+00:00"
+        },
+        {
+            "name": "sarfraznawaz2005/loading",
+            "version": "1.3.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sarfraznawaz2005/loading.git",
+                "reference": "d006d0471d59e2da3d1fd0078c7298f16a9b9947"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sarfraznawaz2005/loading/zipball/d006d0471d59e2da3d1fd0078c7298f16a9b9947",
+                "reference": "d006d0471d59e2da3d1fd0078c7298f16a9b9947",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5|~6|~7",
+                "php": ">=7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Sarfraznawaz2005\\Loading\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Sarfraznawaz2005\\Loading\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sarfraz Ahmed",
+                    "email": "sarfraznawaz2005@gmail.com"
+                }
+            ],
+            "description": "Laravel package to add loading indicator to pages while page is loading.",
+            "keywords": [
+                "indicator",
+                "laravel",
+                "loader",
+                "loading"
+            ],
+            "time": "2020-03-08T07:00:35+00:00"
         },
         {
             "name": "seld/jsonlint",
@@ -6611,5 +6663,6 @@
     "platform": {
         "php": "^7.2.5"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }

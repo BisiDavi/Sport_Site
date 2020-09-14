@@ -11,10 +11,13 @@ class CustomersController extends Controller
     {
         $customers = Customer::all();
 
+        $activeCustomer = Customer::active()->get();
 
-        return view('demo.customers', [
-            'myCustomers' => $customers
-        ]);
+        $inactiveCustomer = Customer::inactive()->get() ;
+
+
+        return view('demo.customers',
+        compact('activeCustomer','inactiveCustomer'));
     }
 
     public function storeCustomers()
