@@ -3,11 +3,11 @@
 use Illuminate\Support\Str;
 
 
-$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
-$host = $url["host"];
-$username = $url["user"];
-$password = $url["pass"];
-$database = substr($url["path"], 1);
+$url = "mysql://b90093eddaaa1a:a8c9fd4b@us-cdbr-east-02.cleardb.com/heroku_b75eee1d8d374a9?reconnect=true";
+$host = "@us-cdbr-east-02.cleardb.com";
+$username ="b90093eddaaa1a";
+$password ="a8c9fd4b";
+$database = "heroku_b75eee1d8d374a9";
 
 
 return [
@@ -66,7 +66,11 @@ return [
             'prefix_indexes' => true,
             'strict' => true,
             'engine' => null,
-            'options' => ''
+            'options' => [
+    \PDO::ATTR_ERRMODE            => \PDO::ERRMODE_EXCEPTION,
+    \PDO::ATTR_DEFAULT_FETCH_MODE => \PDO::FETCH_ASSOC,
+    \PDO::ATTR_EMULATE_PREPARES   => false,
+]
         ],
 
         'pgsql' => [
