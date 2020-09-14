@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Str;
 
-$url = parse_url("mysql://b4b3821e25012c:20f04a26@us-cdbr-east-02.cleardb.com/heroku_21e840b2c680328?reconnect=true");
+$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 $host = $url["us-cdbr-east-02.cleardb.com"] ?? null;
 $username = $url["b4b3821e25012c"] ?? null;
 $password = $url["5UhxJJzeRZBN66F"] ?? null;
@@ -10,7 +10,7 @@ $database = substr($url["heroku_21e840b2c680328"], 1);
 
 
 return [
-
+    
     /*
     |--------------------------------------------------------------------------
     | Default Database Connection Name
