@@ -18,7 +18,15 @@ return [
     */
 
     'default' => env('LOG_CHANNEL', 'stack'),
-
+    'channels' => [
+        'stack' => [
+            'driver' => 'stack',
+            'channels' => ['single'],
+        ],
+        'single' => [
+            'driver' => 'errorlog',
+            'level' => 'debug',
+        ],
     /*
     |--------------------------------------------------------------------------
     | Log Channels
@@ -34,23 +42,7 @@ return [
     |
     */
 
-    'channels' => [
-        'stack' => [
-            'driver' => 'stack',
-            'channels' => ['single'],
-            'ignore_exceptions' => false,
-        ],
-        
-        // 'single' => [
-        //     'driver' => 'errorlog',
-        //     'level' => 'debug',
-        // ],
-
-        'single' => [
-            'driver' => 'single',
-            'path' => storage_path('logs/laravel.log'),
-            'level' => 'debug',
-        ],
+   
 
         'daily' => [
             'driver' => 'daily',
